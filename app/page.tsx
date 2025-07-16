@@ -12,8 +12,8 @@ export default function Home() {
     <>
       <Hero />
       <CompeticoesEmDestaque />
-      <StatsSection />
       <Photos />
+      <StatsSection />
       <Contact2 
       title="Fale Conosco"
       description="Estamos disponíveis para dúvidas, sugestões ou oportunidades de parceria. Conte com a gente!"
