@@ -21,67 +21,76 @@ export const Contact2 = ({
   email = "contato@nelp.com.br",
 }: Contact2Props) => {
   return (
-    <section id="contato" className="py-12">
-      <div className="container">
-        <div className="mx-auto flex max-w-screen-xl flex-col justify-between gap-10 lg:flex-row">
-          {/* Texto + Contatos + Imagem */}
-          <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start">
-            <div className="flex flex-col gap-6 max-w-sm text-center lg:text-left">
-              <h1 className="text-5xl font-semibold">{title}</h1>
-              <p className="text-muted-foreground">{description}</p>
-
+    <section
+      id="contato"
+      className="relative py-12 bg-cover bg-center"
+      style={{ backgroundImage: "url('/maps.png.jpeg')" }}
+    >
+      <div className="absolute inset-0 bg-black/70 z-0" />
+      <div className="container relative z-10">
+        <div className="mx-auto flex max-w-screen-xl flex-col justify-between gap-10 lg:flex-row items-center">
+          {/* Texto + Imagem */}
+          <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-10">
+            {/* Coluna da esquerda: texto de apresentação e contatos */}
+            <div className="flex flex-col gap-6 max-w-sm w-full text-left">
+              <div className="flex items-center gap-2 mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8 text-yellow-400">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12.79V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2h7.79a2 2 0 011.42.59l2.2 2.2a1 1 0 001.7-.7v-2.09a2 2 0 00.59-1.41z" />
+                </svg>
+                <h1 className="text-4xl font-bold text-white drop-shadow">{title}</h1>
+              </div>
+              <p className="text-gray-200 text-lg font-light max-w-xs">{description}</p>
               <div>
-                <h3 className="mb-4 text-2xl pt-32 font-semibold">Contatos</h3>
-                <ul className="ml-4 list-disc">
+                <h3 className="mb-2 text-xl font-semibold text-yellow-400">Contatos</h3>
+                <ul className="ml-4 list-disc text-base text-white">
                   <li>
                     <span className="font-bold">Telefone: </span>
-                    <a href={`tel:${phone}`} className="underline font-bold text-yellow-400">
+                    <a href={`tel:${phone}`} className="underline font-bold text-yellow-300 hover:text-yellow-400 transition">
                       {phone}
                     </a>
                   </li>
                   <li>
                     <span className="font-bold">Email: </span>
-                    <a href={`mailto:${email}`} className="underline font-bold text-yellow-400">
+                    <a href={`mailto:${email}`} className="underline font-bold text-yellow-300 hover:text-yellow-400 transition">
                       {email}
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
-
-            {/* Imagem */}
-            <div className="flex items-center justify-center">
-              <img src="/pngwing.png" alt="Volleyball Girl" className="w-40 lg:w-48" />
-            </div>
-          </div>
-
-          {/* Formulário */}
-          <div className="flex max-w-md bg-black/85 flex-col gap-6 rounded-lg border p-10 mx-auto">
-            <div className="flex gap-4">
-              <div className="grid w-full items-center gap-1.5">
-                <Label className="text-yellow-400" htmlFor="firstname">Nome</Label>
-                <Input type="text" id="firstname" placeholder="Digite seu nome" />
+            {/* Coluna da direita: formulário com menina */}
+            <div className="flex-1 flex items-center justify-end w-full">
+              <div className="relative w-full max-w-md">
+                <form className="bg-white/20 backdrop-blur-md rounded-2xl shadow-2xl border border-yellow-400 p-10 flex flex-col gap-6">
+                  <div className="flex gap-4">
+                    <div className="grid w-full items-center gap-1.5">
+                      <Label className="text-yellow-400" htmlFor="firstname">Nome</Label>
+                      <Input type="text" id="firstname" placeholder="Digite seu nome" className="bg-white/80" />
+                    </div>
+                    <div className="grid w-full items-center gap-1.5">
+                      <Label className="text-yellow-400" htmlFor="lastname">Sobrenome</Label>
+                      <Input type="text" id="lastname" placeholder="Digite seu sobrenome" className="bg-white/80" />
+                    </div>
+                  </div>
+                  <div className="grid w-full items-center gap-1.5">
+                    <Label className="text-yellow-400" htmlFor="email">E-mail</Label>
+                    <Input type="email" id="email" placeholder="Digite seu e-mail" className="bg-white/80" />
+                  </div>
+                  <div className="grid w-full items-center gap-1.5">
+                    <Label className="text-yellow-400" htmlFor="phone">Telefone</Label>
+                    <Input type="tel" id="phone" placeholder="Informe seu Telefone" className="bg-white/80" />
+                  </div>
+                  <div className="grid w-full gap-1.5">
+                    <Label className="text-yellow-400" htmlFor="message">Mensagem</Label>
+                    <Textarea placeholder="Digite sua mensagem aqui." id="message" className="bg-white/80" />
+                  </div>
+                  <Button className="w-full bg-gradient-to-r from-yellow-400 via-yellow-500 to-blue-700 text-black font-bold text-lg py-3 rounded-xl shadow hover:from-yellow-500 hover:to-blue-800 transition">
+                    Enviar Mensagem
+                  </Button>
+                </form>
+                <img src="/pngwing.png" alt="Volleyball Girl" className="hidden lg:block absolute -right-24 bottom-0 w-40 lg:w-48 drop-shadow-xl pointer-events-none select-none" />
               </div>
-              <div className="grid w-full items-center gap-1.5">
-                <Label className="text-yellow-400" htmlFor="lastname">Sobrenome</Label>
-                <Input type="text" id="lastname" placeholder="Digite seu sobrenome" />
-              </div>
             </div>
-            <div className="grid w-full items-center gap-1.5">
-              <Label className="text-yellow-400" htmlFor="email">E-mail</Label>
-              <Input type="email" id="email" placeholder="Digite seu e-mail" />
-            </div>
-            <div className="grid w-full items-center gap-1.5">
-              <Label className="text-yellow-400" htmlFor="phone">Telefone</Label>
-              <Input type="tel" id="phone" placeholder="Informe seu Telefone" />
-            </div>
-            <div className="grid w-full gap-1.5">
-              <Label className="text-yellow-400" htmlFor="message">Mensagem</Label>
-              <Textarea placeholder="Digite sua mensagem aqui." id="message" />
-            </div>
-            <Button className="w-full bg-yellow-400 text-black hover:bg-yellow-500">
-              Enviar Mensagem
-            </Button>
           </div>
         </div>
       </div>
