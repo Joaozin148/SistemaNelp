@@ -27,8 +27,8 @@ export const Contact2 = ({
       style={{ backgroundImage: "url('/maps.png.jpeg')" }}
     >
       <div className="absolute inset-0 bg-black/70 z-0" />
-      <div className="container relative z-10">
-        <div className="mx-auto flex max-w-screen-xl flex-col justify-between gap-10 lg:flex-row items-center">
+      <div className="relative z-10">
+        <div className="mx-auto flex px-36 flex-col justify-between gap-10 lg:flex-row items-center">
           {/* Texto + Imagem */}
           <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-10">
             {/* Coluna da esquerda: texto de apresentação e contatos */}
