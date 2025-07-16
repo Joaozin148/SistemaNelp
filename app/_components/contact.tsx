@@ -21,7 +21,7 @@ export const Contact2 = ({
   email = "contato@nelp.com.br",
 }: Contact2Props) => {
   return (
-    <section className="py-12">
+    <section id="contato" className="py-12">
       <div className="container">
         <div className="mx-auto flex max-w-screen-xl flex-col justify-between gap-10 lg:flex-row">
           {/* Texto + Contatos + Imagem */}

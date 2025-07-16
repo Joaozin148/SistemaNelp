@@ -36,7 +36,7 @@ export function Header() {
             Transparência
             <span className="block h-1 bg-yellow-300 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
           </Link>
-          <Link href="/contato" className="hover:text-yellow-300 transition-all duration-200 relative group">
+          <Link href="/#contato" className="hover:text-yellow-300 transition-all duration-200 relative group">
             Contato
             <span className="block h-1 bg-yellow-300 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
           </Link>
