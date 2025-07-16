@@ -34,6 +34,7 @@ interface ServiceItemProps {
   delay: number
   direction: "left" | "right"
 }
+
 export default function AboutUsSection() {
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef<HTMLDivElement>(null)
@@ -67,14 +68,15 @@ export default function AboutUsSection() {
     },
   }
 
-const itemVariants = {
-  hidden: { y: 20, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: { duration: 0.6, ease: "easeOut" },
-  },
-}
+  const itemVariants: Variants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.6, ease: "easeInOut" }, // Changed to a valid easing function
+    },
+  }
+
   const services = [
     {
       icon: <Pen className="w-6 h-6" />,
@@ -344,23 +346,9 @@ const itemVariants = {
             />
           ))}
         </motion.div>
-
       </motion.div>
     </section>
   )
-}
-
-interface ServiceItemProps {
-  icon: React.ReactNode
-  secondaryIcon?: React.ReactNode
-  title: string
-  description: string
-  variants: {
-    hidden: { opacity: number; y?: number }
-    visible: { opacity: number; y?: number; transition: { duration: number; ease: string } }
-  }
-  delay: number
-  direction: "left" | "right"
 }
 
 function ServiceItem({ icon, secondaryIcon, title, description, variants, delay, direction }: ServiceItemProps) {
@@ -467,4 +455,3 @@ function StatCounter({ icon, value, label, suffix, delay }: StatCounterProps) {
     </motion.div>
   )
 }
-
