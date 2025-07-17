@@ -7,7 +7,7 @@ export default function CompeticoesEmDestaque() {
         <div className="container mx-auto">
           <div className="mb-8">
             <h2 className="text-lg uppercase tracking-widest font-light text-yellow-400">Competições em destaque</h2>
-            <h1 className="text-3xl font-bold text-white">Vôlei Paraná</h1>
+            <h1 className="text-3xl font-bold text-white">NELP Voleibol</h1>
             <p className="text-sm text-gray-300">consulte as tabelas e resultados no menu principal</p>
             <div className="w-24 h-1 bg-yellow-400 mt-2"></div>
           </div>
