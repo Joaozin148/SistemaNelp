@@ -63,7 +63,8 @@ export default function Galery() {
             <img
               src={selectedImage.src}
               alt={selectedImage.alt}
-              className="w-full h-auto rounded-lg shadow-xl"
+              className="rounded-lg shadow-xl"
+              style={{ maxWidth: '870px', maxHeight: '580px', objectFit: 'contain', width: '100%', height: 'auto' }}
             />
             <button
               className="absolute top-2 right-2 text-white bg-red-500 rounded-full w-8 h-8 flex items-center justify-center"

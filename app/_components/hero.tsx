@@ -1,21 +1,19 @@
 'use client';
 
 import Image from 'next/image';
-import { Header } from './header';
 import { Button } from './ui/button';
 import Link from 'next/link';
 
 export default function HeroSection() {
   return (
     <>
-      <main className="overflow-hidden">
-        <Header />
-        <section className="relative h-[420px] flex items-center justify-center">
+      <main className="overflow-hidden pt-[76px]">
+        <section className="relative h-[300px] flex items-center justify-center">
           <Image
-            src="/"
+            src="/banner.png"
             alt="Background"
             fill
-            className="object-cover w-full h-[400px]"
+            className="object-cover w-full h-[420px]"
             priority
           />
           <div className="absolute inset-0 bg-black/50 z-0" />
@@ -29,7 +27,7 @@ export default function HeroSection() {
                         <Button
                             asChild
                             size="lg">
-                            <Link href="/">
+                            <Link href="/galery">
                                 <span>Ver Galeria</span>
                             </Link>
                         </Button>
@@ -38,7 +36,7 @@ export default function HeroSection() {
                             asChild
                             size="lg"
                             variant="outline">
-                            <Link href="/">
+                            <Link href="#contato">
                                 <span>Quero fazer Parte</span>
                             </Link>
                         </Button>

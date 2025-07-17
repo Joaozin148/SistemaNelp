@@ -88,7 +88,7 @@ export const Contact2 = ({
                     Enviar Mensagem
                   </Button>
                 </form>
-                <img src="/pngwing.png" alt="Volleyball Girl" className="hidden lg:block absolute -right-24 bottom-0 w-40 lg:w-48 drop-shadow-xl pointer-events-none select-none" />
+                <img src="/mulher2.png" alt="Volleyball Girl" className="hidden lg:block absolute -right-24 h-full bottom-0 w-40 lg:w-40 drop-shadow-xl pointer-events-none select-none" />
               </div>
             </div>
           </div>

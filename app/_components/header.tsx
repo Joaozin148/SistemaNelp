@@ -10,7 +10,7 @@ export function Header() {
   const isLoggedIn = false; // Troque pela sua lógica real
 
   return (
-    <header className="fixed h-20 top-0 left-0 w-full z-10 bg-gradient-to-r from-yellow-300 via-yellow-500 to-blue-700 shadow-lg border-b-4 border-yellow-400">
+    <header className="fixed h-20 top-0 left-0 w-full z-20 bg-gradient-to-r from-yellow-300 via-yellow-500 to-blue-700 shadow-lg border-b-4 border-yellow-400">
       <div className="flex items-center justify-between w-full px-6 mx-auto max-w-8xl h-full">
         {/* Logo com bola de voleibol */}
         <div className="flex items-center gap-2">

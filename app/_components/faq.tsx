@@ -1,7 +1,6 @@
 'use client'
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/app/_components/ui/accordion'
-import Link from 'next/link'
 import { FaQuestionCircle } from 'react-icons/fa'
 
 export default function FAQsFour() {
