@@ -83,15 +83,15 @@ export default function AboutUsSection() {
       secondaryIcon: <Sparkles className="w-4 h-4 absolute -top-1 -right-1 text-[#A9BBC8]" />,
       title: "Interior",
       description:
-        "Transform your living spaces with our expert interior design services. We blend functionality and aesthetics to create spaces that reflect your unique style and personality.",
+        "Transforme seus ambientes com nossos serviços especializados de design de interiores. Unimos funcionalidade e estética para criar espaços que refletem seu estilo e personalidade únicos.",
       position: "left",
     },
     {
       icon: <Home className="w-6 h-6" />,
       secondaryIcon: <CheckCircle className="w-4 h-4 absolute -top-1 -right-1 text-[#A9BBC8]" />,
-      title: "Exterior",
+      title: "Exteriores",
       description:
-        "Make a lasting impression with stunning exterior designs that enhance curb appeal and create harmonious connections between architecture and landscape.",
+        "Cause uma impressão duradoura com projetos de exteriores impressionantes que valorizam a fachada e criam conexões harmoniosas entre arquitetura e paisagem.",
       position: "left",
     },
     {
@@ -99,40 +99,40 @@ export default function AboutUsSection() {
       secondaryIcon: <Star className="w-4 h-4 absolute -top-1 -right-1 text-[#A9BBC8]" />,
       title: "Design",
       description:
-        "Our innovative design process combines creativity with practicality, resulting in spaces that are both beautiful and functional for everyday living.",
+        "Nosso processo inovador de design une criatividade e praticidade, resultando em ambientes belos e funcionais para o dia a dia.",
       position: "left",
     },
     {
       icon: <PaintBucket className="w-6 h-6" />,
       secondaryIcon: <Sparkles className="w-4 h-4 absolute -top-1 -right-1 text-[#A9BBC8]" />,
-      title: "Decoration",
+      title: "Decoração",
       description:
-        "Elevate your space with our curated decoration services. From color schemes to textiles and accessories, we perfect every detail to bring your vision to life.",
+        "Valorize seu espaço com nossos serviços de decoração personalizados. De paletas de cores a têxteis e acessórios, aperfeiçoamos cada detalhe para tornar sua visão realidade.",
       position: "right",
     },
     {
       icon: <Ruler className="w-6 h-6" />,
       secondaryIcon: <CheckCircle className="w-4 h-4 absolute -top-1 -right-1 text-[#A9BBC8]" />,
-      title: "Planning",
+      title: "Planejamento",
       description:
-        "Our meticulous planning process ensures every project runs smoothly from concept to completion, with careful attention to timelines, budgets, and requirements.",
+        "Nosso processo de planejamento minucioso garante que cada projeto ocorra sem contratempos, do conceito à conclusão, com atenção especial a prazos, orçamentos e requisitos.",
       position: "right",
     },
     {
       icon: <Building2 className="w-6 h-6" />,
       secondaryIcon: <Star className="w-4 h-4 absolute -top-1 -right-1 text-[#A9BBC8]" />,
-      title: "Execution",
+      title: "Execução",
       description:
-        "Watch your dream space come to life through our flawless execution. Our skilled team handles every aspect of implementation with precision and care.",
+        "Veja seu espaço dos sonhos ganhar vida com nossa execução impecável. Nossa equipe qualificada cuida de cada etapa da implementação com precisão e cuidado.",
       position: "right",
     },
   ]
 
   const stats = [
-    { icon: <Award />, value: 150, label: "Projects Completed", suffix: "+" },
-    { icon: <Users />, value: 1200, label: "Happy Clients", suffix: "+" },
-    { icon: <Calendar />, value: 12, label: "Years Experience", suffix: "" },
-    { icon: <TrendingUp />, value: 98, label: "Satisfaction Rate", suffix: "%" },
+    { icon: <Award />, value: 150, label: "Projetos Concluídos", suffix: "+" },
+    { icon: <Users />, value: 1200, label: "Clientes Satisfeitos", suffix: "+" },
+    { icon: <Calendar />, value: 12, label: "Anos de Experiência", suffix: "" },
+    { icon: <TrendingUp />, value: 98, label: "Taxa de Satisfação", suffix: "%" },
   ]
 
   return (
@@ -190,9 +190,9 @@ export default function AboutUsSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <Zap className="w-4 h-4" />
-            DISCOVER OUR STORY
+            CONHEÇA NOSSA HISTÓRIA
           </motion.span>
-          <h2 className="text-4xl md:text-5xl font-light mb-4 text-center">About Us</h2>
+          <h2 className="text-4xl md:text-5xl font-light mb-4 text-center">Sobre Nós</h2>
           <motion.div
             className="w-24 h-1 bg-[#88734C]"
             initial={{ width: 0 }}
@@ -202,9 +202,7 @@ export default function AboutUsSection() {
         </motion.div>
 
         <motion.p className="text-center max-w-2xl mx-auto mb-16 text-[#202e44]/80" >
-          We are a passionate team of designers and architects dedicated to creating beautiful, functional spaces that
-          inspire and elevate everyday living. With attention to detail and commitment to excellence, we transform
-          visions into reality.
+          Somos uma equipe apaixonada de designers e arquitetos dedicados a criar espaços belos e funcionais que inspiram e elevam o dia a dia. Com atenção aos detalhes e compromisso com a excelência, transformamos visões em realidade.
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
@@ -252,7 +250,7 @@ export default function AboutUsSection() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    Our Portfolio <ArrowRight className="w-4 h-4" />
+                    Nosso Portfólio <ArrowRight className="w-4 h-4" />
                   </motion.button>
                 </motion.div>
               </motion.div>
