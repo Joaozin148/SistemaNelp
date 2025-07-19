@@ -8,10 +8,10 @@ const Component = forwardRef<HTMLElement>((props, ref) => {
   return (
     <ReactLenis root>
       <main className='bg-black py-10' ref={ref}>
-        <section className='text-white   w-full bg-slate-950  '>
-          <div className='grid grid-cols-12 gap-2'>
-            <div className='grid gap-2 col-span-4'>
-              <figure className=' w-full'>
+        <section className='text-white w-full bg-slate-950  '>
+          <div className='grid grid-cols-12 gap-2 '>
+            <div className='grid gap-2 col-span-4 '>
+              <figure className=' w-full '>
                 <img
                   src='https://images.unsplash.com/photo-1718838541476-d04e71caa347?w=500&auto=format&fit=crop'
                   alt=''

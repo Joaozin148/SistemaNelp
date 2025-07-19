@@ -34,7 +34,7 @@ export default function Galery() {
   };
 
   return (
-    <div className="relative">
+    <div className="relative pt-20">
       {/* Galeria com layout masonry */}
       <div className="columns-2 md:columns-3 lg:columns-4 gap-4 p-4">
         {images.map((image) => (

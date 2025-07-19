@@ -16,12 +16,12 @@ export default function HeroSection() {
             className="object-cover w-full h-[420px]"
             priority
           />
-          <div className="absolute inset-0 bg-black/50 z-0" />
+          <div className="absolute inset-0 bg-white z-0" />
           <div className="relative z-10 text-center">
             <div className="mx-auto max-w-5xl px-6">
                 <div className="text-center">
-                    <h2 className="text-balance text-4xl font-semibold lg:text-5xl">Nelp Univôlei</h2>
-                    <p className="mt-4">Faça Parte Você Também!</p>
+                    <h2 className="text-balance text-black  text-4xl font-semibold lg:text-5xl">Nelp Univôlei</h2>
+                    <p className="mt-4 text-black ">Faça Parte Você Também!</p>
 
                     <div className="mt-12 flex flex-wrap justify-center gap-4">
                         <Button
