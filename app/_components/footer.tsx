@@ -13,7 +13,7 @@ export default function FooterSection() {
             <h3 className="font-bold text-lg mb-2">Presidente</h3>
             <div className="flex items-start gap-2 text-yellow-400">
               <span className="mt-1">✺</span>
-              <span className="text-white">Nicholle Mello Lopes</span>
+              <span className="text-white">Georgia da Cunha Ben</span>
             </div>
           </div>
           <div>
@@ -39,8 +39,8 @@ export default function FooterSection() {
         <div>
           <h3 className="font-bold text-lg mb-4">Informações</h3>
           <ul className="space-y-3">
-            <li className="flex items-center gap-3"><FaPhoneAlt className="text-yellow-400" /><span className="text-white">(11) 99807-1657</span></li>
-            <li className="flex items-center gap-3"><FaRegEnvelope className="text-yellow-400" /><span className="text-white">ongesporte@hotmail.com</span></li>
+            <li className="flex items-center gap-3"><FaPhoneAlt className="text-yellow-400" /><span className="text-white">(41) 99510-9690</span></li>
+            <li className="flex items-center gap-3"><FaRegEnvelope className="text-yellow-400" /><span className="text-white">nelpunivolei@gmail.com</span></li>
             <li className="flex items-start gap-3"><FaRegClock className="text-yellow-400 mt-1" /><span className="text-white">Segunda à Sexta<br/>Das 09:00 às 17:00</span></li>
             <li className="flex items-start gap-3"><FaMapMarkerAlt className="text-yellow-400 mt-1" /><span className="text-white">Avenida Luiz José Sereno, 740 – Apto 03 Bl 03<br/>– Jardim Ermida II<br/>CEP 13-212-210 Jundiaí SP</span></li>
           </ul>
