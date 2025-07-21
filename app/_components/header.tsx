@@ -34,11 +34,11 @@ export function Header() {
             <span className="block h-1 bg-yellow-300 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
           </Link>
           <Link href="/aboutUs" className="hover:text-yellow-300 transition-all duration-200 relative group">
-            Quem somos nós
+            Sobre nós
             <span className="block h-1 bg-yellow-300 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
           </Link>
           <Link href="/galery" className="hover:text-yellow-300 transition-all duration-200 relative group">
-            Galeria
+            Projetos
             <span className="block h-1 bg-yellow-300 scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
           </Link>
           <Link href="/transparencia" className="hover:text-yellow-300 transition-all duration-200 relative group">
