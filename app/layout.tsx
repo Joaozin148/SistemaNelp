@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { AccessibilityProvider } from "./_components/acess";
+import VLibrasWidget from "./_components/vlibras";
 
 
 export const metadata: Metadata = {
@@ -16,9 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-white">
-        <AccessibilityProvider>
+       <VLibrasWidget />
           {children}
-        </AccessibilityProvider>
+        
       </body>
     </html>
   );
