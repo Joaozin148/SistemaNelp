@@ -4,18 +4,10 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { FaInstagram, FaFacebook } from 'react-icons/fa';
 import { GiVolleyballBall } from 'react-icons/gi'; // Ícone de voleibol
-<<<<<<< HEAD
-// Remover importação do useAccessibility
-=======
->>>>>>> 35ae1241e08d5c7242791813131139ddffaccf65
 
 export function Header() {
   const [searchQuery, setSearchQuery] = useState('');
   const isLoggedIn = false; // Troque pela sua lógica real
-<<<<<<< HEAD
-  // Remover uso do hook de acessibilidade
-=======
->>>>>>> 35ae1241e08d5c7242791813131139ddffaccf65
 
   return (
     <header className="fixed h-20 top-0 left-0 w-full z-20 bg-gradient-to-r from-yellow-300 via-yellow-500 to-blue-700 shadow-lg border-b-4 border-yellow-400">
@@ -25,11 +17,6 @@ export function Header() {
           <GiVolleyballBall className="text-white text-3xl drop-shadow-lg animate-bounce" />
           <span className="font-extrabold text-2xl text-white tracking-widest font-sans drop-shadow-lg">NELP Voleibol</span>
         </div>
-
-<<<<<<< HEAD
-        {/* Remover botão de aumentar/reduzir fonte */}
-=======
->>>>>>> 35ae1241e08d5c7242791813131139ddffaccf65
 
         {/* Menu */}
         <nav className="hidden md:flex items-center gap-6 font-semibold">
