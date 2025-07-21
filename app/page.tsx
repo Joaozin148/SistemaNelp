@@ -8,21 +8,29 @@ import Logos from "./_components/logos";
 import Photos from "./_components/photos";
 import StatsSection from "./_components/stats";
 import WhatsAppButton from "./_components/whatsapp";
+import AcessibilidadeBar from "./_components/acessibilidade-bar";
+import ImpactoSection from "./_components/impacto";
+import MissaoDestaqueSection from "./_components/missao-destaque";
+import DepoimentoCtaSection from "./_components/depoimento-cta";
 
 export default function Home() {
   return (
     <>
+      <AcessibilidadeBar />
       <Header />
       <WhatsAppButton />
       <Hero />
+      <ImpactoSection />
+      <MissaoDestaqueSection />
       <CompeticoesEmDestaque />
       <Photos />
+      <DepoimentoCtaSection />
       <StatsSection />
       <Contact2 
-      title="Fale Conosco"
-      description="Estamos disponíveis para dúvidas, sugestões ou oportunidades de parceria. Conte com a gente!"
-      phone="(123) 34567890"
-      email="email@example.com"
+        title="Fale Conosco"
+        description="Estamos disponíveis para dúvidas, sugestões ou oportunidades de parceria. Conte com a gente!"
+        phone="(123) 34567890"
+        email="email@example.com"
       />
       <Faq />
       <Logos />

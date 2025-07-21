@@ -8,6 +8,11 @@
   }
 }
 
+.contraste-alto {
+  background: #000 !important;
+  color: #fff !important;
+  filter: contrast(1.5) grayscale(0.2);
+}
 
 
 @layer base {

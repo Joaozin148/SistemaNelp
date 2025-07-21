@@ -182,7 +182,7 @@ export default function AboutUsSection() {
         animate={isInView ? "visible" : "hidden"}
         variants={containerVariants}
       >
-        <motion.div className="flex flex-col items-center mb-6" >
+        <motion.div className="flex flex-col items-center mb-12">
           <motion.span
             className="text-[#88734C] font-medium mb-2 flex items-center gap-2"
             initial={{ opacity: 0, y: -10 }}
@@ -192,7 +192,7 @@ export default function AboutUsSection() {
             <Zap className="w-4 h-4" />
             CONHEÇA NOSSA HISTÓRIA
           </motion.span>
-          <h2 className="text-4xl md:text-5xl font-light mb-4 text-center">Sobre Nós</h2>
+          <h2 className="text-4xl md:text-5xl font-light mb-4 text-center">Sobre a NELP</h2>
           <motion.div
             className="w-24 h-1 bg-[#88734C]"
             initial={{ width: 0 }}
@@ -201,9 +201,37 @@ export default function AboutUsSection() {
           ></motion.div>
         </motion.div>
 
-        <motion.p className="text-center max-w-2xl mx-auto mb-16 text-[#202e44]/80" >
-          Somos uma equipe apaixonada de designers e arquitetos dedicados a criar espaços belos e funcionais que inspiram e elevam o dia a dia. Com atenção aos detalhes e compromisso com a excelência, transformamos visões em realidade.
-        </motion.p>
+        {/* Cards de apresentação */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          {/* Quem Somos */}
+          <motion.div className="bg-white/80 rounded-xl shadow-lg p-8 flex flex-col items-center text-center border-t-4 border-[#88734C]" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
+            <Users className="w-10 h-10 text-[#88734C] mb-2" />
+            <h3 className="text-xl font-bold mb-2">Quem Somos</h3>
+            <p className="text-[#202e44]/90 text-sm">A NELP – Novo Esporte do Litoral Paranaense é uma organização sem fins lucrativos fundada com o propósito de transformar vidas por meio do esporte. Com sede em Paranaguá (PR), nasceu da união de profissionais da educação física, voluntários e lideranças comunitárias que enxergaram no esporte uma poderosa ferramenta de inclusão social, educação e cidadania.</p>
+          </motion.div>
+          {/* Missão */}
+          <motion.div className="bg-white/80 rounded-xl shadow-lg p-8 flex flex-col items-center text-center border-t-4 border-[#A9BBC8]" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.1 }}>
+            <Star className="w-10 h-10 text-[#A9BBC8] mb-2" />
+            <h3 className="text-xl font-bold mb-2">Missão</h3>
+            <p className="text-[#202e44]/90 text-sm">Democratizar o acesso ao esporte de qualidade, especialmente para crianças, adolescentes e jovens em situação de vulnerabilidade social no litoral do Paraná. Através de projetos esportivos gratuitos e ações comunitárias, promovemos o desenvolvimento físico, emocional e social dos participantes, contribuindo para a formação de cidadãos mais conscientes, saudáveis e preparados para o futuro.</p>
+          </motion.div>
+          {/* Nossa História */}
+          <motion.div className="bg-white/80 rounded-xl shadow-lg p-8 flex flex-col items-center text-center border-t-4 border-[#FFD600]" initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.9, delay: 0.2 }}>
+            <Award className="w-10 h-10 text-[#FFD600] mb-2" />
+            <h3 className="text-xl font-bold mb-2">Nossa História</h3>
+            <p className="text-[#202e44]/90 text-sm">Ao longo dos anos, a NELP firmou parcerias com órgãos públicos, empresas e apoiadores locais, consolidando seu compromisso com a transparência, a responsabilidade social e o desenvolvimento humano. Hoje, além das atividades esportivas regulares, a organização se destaca por sua atuação em projetos incentivados por leis de fomento ao esporte, sempre priorizando a ética e a prestação de contas à sociedade.</p>
+          </motion.div>
+        </div>
+
+        {/* Depoimento/Frase de impacto */}
+        <motion.div className="max-w-2xl mx-auto mb-10 text-center" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.2 }}>
+          <blockquote className="italic text-lg text-[#202e44]/80 border-l-4 border-[#A9BBC8] pl-4">“O esporte mudou minha vida e me ensinou a nunca desistir dos meus sonhos.”<br /><span className="text-sm text-[#88734C]">— Participante NELP</span></blockquote>
+        </motion.div>
+
+        {/* Botão de ação */}
+        <div className="flex justify-center mb-16">
+          <a href="#contato" className="bg-yellow-400 hover:bg-yellow-500 text-white font-semibold px-8 py-3 rounded-full shadow transition-colors duration-200">Quero fazer parte</a>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
           {/* Left Column */}

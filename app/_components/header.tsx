@@ -4,12 +4,12 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { FaInstagram, FaFacebook } from 'react-icons/fa';
 import { GiVolleyballBall } from 'react-icons/gi'; // Ícone de voleibol
-import { useAccessibility } from './acess'
+// Remover importação do useAccessibility
 
 export function Header() {
   const [searchQuery, setSearchQuery] = useState('');
   const isLoggedIn = false; // Troque pela sua lógica real
-  const { fontSize, toggleFontSize } = useAccessibility();
+  // Remover uso do hook de acessibilidade
 
   return (
     <header className="fixed h-20 top-0 left-0 w-full z-20 bg-gradient-to-r from-yellow-300 via-yellow-500 to-blue-700 shadow-lg border-b-4 border-yellow-400">
@@ -20,12 +20,7 @@ export function Header() {
           <span className="font-extrabold text-2xl text-white tracking-widest font-sans drop-shadow-lg">NELP Voleibol</span>
         </div>
 
-        <button
-          onClick={toggleFontSize}
-          className="p-2 bg-gray-200 rounded-md hover:bg-gray-300 transition"
-        >
-          {fontSize === 'normal' ? 'Aumentar Fonte' : 'Reduzir Fonte'}
-        </button>
+        {/* Remover botão de aumentar/reduzir fonte */}
 
         {/* Menu */}
         <nav className="hidden md:flex items-center gap-6 font-semibold">
