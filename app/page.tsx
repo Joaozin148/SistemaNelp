@@ -7,11 +7,13 @@ import Hero from "./_components/hero";
 import Logos from "./_components/logos";
 import Photos from "./_components/photos";
 import StatsSection from "./_components/stats";
+import WhatsAppButton from "./_components/whatsapp";
 
 export default function Home() {
   return (
     <>
       <Header />
+      <WhatsAppButton />
       <Hero />
       <CompeticoesEmDestaque />
       <Photos />
@@ -22,8 +24,8 @@ export default function Home() {
       phone="(123) 34567890"
       email="email@example.com"
       />
-      <Logos />
       <Faq />
+      <Logos />
       <Footer />
     </>
   );
