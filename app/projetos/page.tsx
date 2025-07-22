@@ -1,7 +1,6 @@
 import FooterSection from "../_components/footer";
-import Projetos from "../_components/projetos";
 import { Header } from "../_components/header";
-
+import Projetos from "../_components/projetos";
 
 export default function ProjetosPage() {
   return (
@@ -10,5 +9,5 @@ export default function ProjetosPage() {
       <Projetos />
       <FooterSection />
     </>
-  )
-}
+  );
+} 

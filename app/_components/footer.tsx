@@ -29,10 +29,9 @@ export default function FooterSection() {
           <h3 className="font-bold text-lg mb-4">Páginas</h3>
           <ul className="space-y-3">
             <li className="flex items-center gap-2 text-yellow-400"><span>✺</span><Link href="/" className="text-white hover:underline">Início</Link></li>
-            <li className="flex items-center gap-2 text-yellow-400"><span>✺</span><Link href="/quem-somos" className="text-white hover:underline">Quem somos</Link></li>
+            <li className="flex items-center gap-2 text-yellow-400"><span>✺</span><Link href="/aboutUs" className="text-white hover:underline">Sobre nós</Link></li>
             <li className="flex items-center gap-2 text-yellow-400"><span>✺</span><Link href="/projetos" className="text-white hover:underline">Projetos</Link></li>
             <li className="flex items-center gap-2 text-yellow-400"><span>✺</span><Link href="/transparencia" className="text-white hover:underline">Transparência</Link></li>
-            <li className="flex items-center gap-2 text-yellow-400"><span>✺</span><Link href="/contato" className="text-white hover:underline">Contato</Link></li>
           </ul>
         </div>
         {/* Informações */}
@@ -42,7 +41,7 @@ export default function FooterSection() {
             <li className="flex items-center gap-3"><FaPhoneAlt className="text-yellow-400" /><span className="text-white">(41) 99510-9690</span></li>
             <li className="flex items-center gap-3"><FaRegEnvelope className="text-yellow-400" /><span className="text-white">nelpunivolei@gmail.com</span></li>
             <li className="flex items-start gap-3"><FaRegClock className="text-yellow-400 mt-1" /><span className="text-white">Segunda à Sexta<br/>Das 09:00 às 17:00</span></li>
-            <li className="flex items-start gap-3"><FaMapMarkerAlt className="text-yellow-400 mt-1" /><span className="text-white">Avenida Luiz José Sereno, 740 – Apto 03 Bl 03<br/>– Jardim Ermida II<br/>CEP 13-212-210 Jundiaí SP</span></li>
+            <li className="flex items-start gap-3"><FaMapMarkerAlt className="text-yellow-400 mt-1" /><span className="text-white"> R. Cel. Antônio Bittencourt – Ponta do Caju <br/>CEP 83203-130  Paranaguá  PR</span></li>
           </ul>
         </div>
         {/* Redes Sociais */}

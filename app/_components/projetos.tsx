@@ -18,8 +18,8 @@ const projetos: Projeto[] = [
     status: 'Em andamento',
     descricao: 'Aulas gratuitas de vôlei para crianças.',
     imagens: [
-      '/projetos/volei1.jpg',
-      '/projetos/volei2.jpg'
+      '/projeto1.jpg',
+      '/projeto1.1.jpg'
     ],
     descricaoLonga: 'O projeto leva aulas de vôlei para escolas públicas, promovendo inclusão e saúde...'
   },
@@ -37,7 +37,7 @@ const projetos: Projeto[] = [
   // Adicione mais projetos conforme necessário
 ];
 
-export default function Galery() {
+export default function Projetos() {
   const [projetoSelecionado, setProjetoSelecionado] = useState<Projeto | null>(null);
 
   return (

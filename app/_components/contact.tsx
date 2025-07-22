@@ -17,8 +17,8 @@ interface Contact2Props {
 export const Contact2 = ({
   title = "Fale Conosco",
   description = "Estamos disponíveis para dúvidas, sugestões ou oportunidades de parceria. Conte com a gente!",
-  phone = "(11) 98765-4321",
-  email = "contato@nelp.com.br",
+  phone = "(41) 99510-9690",
+  email = "nelpunivolei@gmail.com",
 }: Contact2Props) => {
   return (
     <section

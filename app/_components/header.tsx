@@ -15,7 +15,7 @@ export function Header() {
         {/* Logo com bola de voleibol */}
         <div className="flex items-center gap-2">
           <GiVolleyballBall className="text-white text-3xl drop-shadow-lg animate-bounce" />
-          <span className="font-extrabold text-2xl text-white tracking-widest font-sans drop-shadow-lg">NELP Voleibol</span>
+          <span className="font-extrabold text-2xl text-white tracking-widest font-sans drop-shadow-lg">NELP UNIVÔLEI</span>
         </div>
 
         {/* Menu */}

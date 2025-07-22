@@ -29,8 +29,8 @@ export default function Home() {
       <Contact2 
         title="Fale Conosco"
         description="Estamos disponíveis para dúvidas, sugestões ou oportunidades de parceria. Conte com a gente!"
-        phone="(123) 34567890"
-        email="email@example.com"
+        phone="(41) 99510-9690"
+        email="nelpunivolei@gmail.com"
       />
       <Faq />
       <Logos />
