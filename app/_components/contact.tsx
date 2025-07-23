@@ -142,7 +142,7 @@ export const Contact2 = ({
                 <img
                   src="/mulher2.png"
                   alt="Volleyball Girl"
-                  className="absolute -right-10 sm:-right-16 bottom-0 h-46 sm:h-full w-40 sm:w-40 drop-shadow-xl pointer-events-none select-none"
+                  className="absolute -right-4 sm:-right-16 bottom-0 h-46 sm:h-full w-40 sm:w-40 drop-shadow-xl pointer-events-none select-none"
                 />
               </div>
             </div>
