@@ -7,7 +7,7 @@ import React, { forwardRef } from 'react';
 const Component = forwardRef<HTMLElement>((props, ref) => {
   return (
     <ReactLenis root>
-      <main className='bg-black py-10' ref={ref}>
+      <main className='bg-black pb-10' ref={ref}>
         <div className='wrapper'>
           <section className='text-white h-full py-4 w-full bg-slate-950 grid place-content-center sticky top-0'>
             <div
