@@ -11,7 +11,7 @@ import WhatsAppButton from "./_components/whatsapp";
 import AcessibilidadeBar from "./_components/acessibilidade-bar";
 import ImpactoSection from "./_components/impacto";
 import MissaoDestaqueSection from "./_components/missao-destaque";
-import DepoimentoCtaSection from "./_components/depoimento-cta";
+
 
 export default function Home() {
   return (
@@ -24,7 +24,6 @@ export default function Home() {
       <MissaoDestaqueSection />
       <CompeticoesEmDestaque />
       <Photos />
-      <DepoimentoCtaSection />
       <StatsSection />
       <Contact2 
         title="Fale Conosco"
