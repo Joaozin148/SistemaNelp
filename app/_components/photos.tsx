@@ -9,14 +9,17 @@ const Component = forwardRef<HTMLElement>((props, ref) => {
     <ReactLenis root>
       <main className='bg-black py-10' ref={ref}>
         <div className='wrapper'>
-          <section className='text-white  h-screen  w-full bg-slate-950  grid place-content-center sticky top-0'>
-            <div className='absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:54px_54px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]'></div>
+          <section className='text-white h-full py-4 w-full bg-slate-950 grid place-content-center sticky top-0'>
+            <div
+              className='absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:54px_54px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none'
+            ></div>
 
-            <h1 className='2xl:text-4xl text-5xl px-8 font-semibold text-center tracking-tight leading-[120%]'>
+            <h1 className='text-4xl sm:text-5xl md:text-4xl lg:text-3xl xl:text-4xl px-4 sm:px-6 md:px-8 font-semibold text-center tracking-tight leading-[120%]'>
               Sobre a NELP
             </h1>
-            <p className='2xl:text-xl text-5xl px-8 font-semibold text-center tracking-tight leading-[120%]'>
-              A NELP – Novo Esporte do Litoral Paranaense é uma organização sem fins lucrativos fundada com o propósito de transformar vidas por meio do esporte. Com sede em Paranaguá (PR), a entidade nasceu da união de profissionais da educação física, voluntários e lideranças comunitárias que enxergaram no esporte uma poderosa ferramenta de inclusão social, educação e cidadania.              <br />
+            <p className='text-lg sm:text-xl md:text-lg lg:text-xl max-w-6xl mx-auto px-4 sm:px-6 md:px-8 font-semibold text-center tracking-tight leading-[140%] mt-4'>
+              A NELP – Novo Esporte do Litoral Paranaense é uma organização sem fins lucrativos fundada com o propósito de transformar vidas por meio do esporte. Com sede em Paranaguá (PR), a entidade nasceu da união de profissionais da educação física, voluntários e lideranças comunitárias que enxergaram no esporte uma poderosa ferramenta de inclusão social, educação e cidadania.
+              <br />
               <br />
               Desde sua criação, a NELP tem como missão democratizar o acesso ao esporte de qualidade, especialmente para crianças, adolescentes e jovens em situação de vulnerabilidade social no litoral do Paraná. Através de projetos esportivos gratuitos e ações comunitárias, a instituição promove o desenvolvimento físico, emocional e social dos participantes, contribuindo para a formação de cidadãos mais conscientes, saudáveis e preparados para o futuro.
               <br />
@@ -24,9 +27,12 @@ const Component = forwardRef<HTMLElement>((props, ref) => {
               Ao longo dos anos, a NELP firmou parcerias com órgãos públicos, empresas e apoiadores locais, consolidando seu compromisso com a transparência, a responsabilidade social e o desenvolvimento humano. Hoje, além das atividades esportivas regulares, a organização se destaca por sua atuação em projetos incentivados por leis de fomento ao esporte, sempre priorizando a ética e a prestação de contas à sociedade.
             </p>
 
-             <a href="/aboutUs" className="inline-block w-30 mx-auto bg-yellow-400 hover:bg-yellow-500 text-white font-semibold px-6 py-2 rounded transition-colors duration-200">
-            Ler mais
-          </a>
+            <a
+              href='/sobre-nos'
+              className='inline-block mx-auto mt-6 bg-yellow-400 hover:bg-yellow-500 text-white font-semibold px-4 py-2 sm:px-6 sm:py-2.5 rounded transition-colors duration-200'
+            >
+              Ler mais
+            </a>
           </section>
         </div>
         <section className='text-white w-full bg-slate-950  '>
@@ -139,4 +145,4 @@ const Component = forwardRef<HTMLElement>((props, ref) => {
 
 Component.displayName = 'Component';
 
-export default Component;
+export default Component; 
