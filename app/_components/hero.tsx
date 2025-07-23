@@ -27,8 +27,8 @@ export default function HeroSection() {
                         <Button
                             asChild
                             size="lg">
-                            <Link href="/galery">
-                                <span>Ver Galeria</span>
+                            <Link href="/projetos">
+                                <span>Ver Projetos</span>
                             </Link>
                         </Button>
 
