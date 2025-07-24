@@ -34,7 +34,7 @@ const members = [
 
 export default function StatsSection() {
     return (
-        <section className="py-12 md:py-32">
+        <section className="py-12 md:pt-32">
             <div className="mx-auto max-w-6xl px-8 lg:px-0">
                 <h2 className="mb-8 text-4xl font-bold md:mb-16 lg:text-5xl">Nossa Equipe</h2>
 

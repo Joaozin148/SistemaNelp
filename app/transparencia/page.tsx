@@ -8,6 +8,7 @@ export default function Transparencia() {
         <>
             <Header /> 
             <StatsSection />
+            <div className="w-full h-1 bg-red-600 mx-auto max-w-7xl mb-10"></div>
             <TransparenciaAdmin />
             <FooterSection />
         </>
