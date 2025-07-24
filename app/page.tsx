@@ -10,6 +10,7 @@ import WhatsAppButton from "./_components/whatsapp";
 import AcessibilidadeBar from "./_components/acessibilidade-bar";
 import ImpactoSection from "./_components/impacto";
 import MissaoDestaqueSection from "./_components/missao-destaque";
+import TransparenciaCTA from "./_components/transparencia-cta";
 
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <MissaoDestaqueSection />
       <CompeticoesEmDestaque />
       <Photos />
+      <TransparenciaCTA />
       <Contact2 
         title="Fale Conosco"
         description="Estamos disponíveis para dúvidas, sugestões ou oportunidades de parceria. Conte com a gente!"
