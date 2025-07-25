@@ -18,7 +18,7 @@ export default function LogoCloud() {
                             <div className="flex">
                                 <img
                                     className="mx-auto h-5 w-fit dark:invert"
-                                    src="https://html.tailus.io/blocks/customers/nvidia.svg"
+                                    src="/logo_menu.png"
                                     alt="Nvidia Logo"
                                     height="20"
                                     width="auto"

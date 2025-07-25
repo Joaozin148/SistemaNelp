@@ -230,7 +230,7 @@ export default function AboutUsSection() {
 
         {/* Botão de ação */}
         <div className="flex justify-center mb-16">
-          <a href="#contato" className="bg-yellow-400 hover:bg-yellow-500 text-white font-semibold px-8 py-3 rounded-full shadow transition-colors duration-200">Quero fazer parte</a>
+          <a href="/#contato" className="bg-yellow-400 hover:bg-yellow-500 text-white font-semibold px-8 py-3 rounded-full shadow transition-colors duration-200">Quero fazer parte</a>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
