@@ -19,13 +19,7 @@ export default function FooterSection() {
               <span className="text-white">Georgia da Cunha Ben</span>
             </div>
           </div>
-          <div>
-            <h3 className="font-bold text-lg mb-2">Coordenadora Técnica do Projeto</h3>
-            <div className="flex items-start gap-2 text-yellow-400">
-              <span className="mt-1">✺</span>
-              <span className="text-white">Prof. Márcia Cristina da Silva Mello – CREF 071627-G/SP</span>
-            </div>
-          </div>
+          
         </div>
         {/* Páginas */}
         <div>

@@ -1,5 +1,7 @@
 'use client';
 
+import { useEffect } from "react";
+
 export default function TransparenciaAdmin() {
   // Define separate arrays for each topic
   const prestacaoContasBlocks = [
@@ -89,8 +91,47 @@ export default function TransparenciaAdmin() {
     },
   ];
 
+  useEffect(() => {
+    const handleClick = (e: Event) => {
+      const target = e.target as HTMLAnchorElement;
+      if (target.tagName === 'A' && target.hash) {
+        const section = document.querySelector(target.hash);
+        if (section) {
+          e.preventDefault();
+          setTimeout(() => {
+            const rect = section.getBoundingClientRect();
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            let offset = rect.top + scrollTop - (window.innerHeight / 2) + (rect.height / 2);
+            if (offset < 0) offset = 0;
+            window.scrollTo({
+              top: offset,
+              behavior: 'smooth',
+            });
+          }, 10);
+        }
+      }
+    };
+    const header = document.getElementById('transparencia-header');
+    if (header) {
+      header.addEventListener('click', handleClick);
+    }
+    return () => {
+      if (header) {
+        header.removeEventListener('click', handleClick);
+      }
+    };
+  }, []);
+
   return (
+
     <div className="p-4 max-w-7xl mx-auto pt-24">
+        <header id="transparencia-header" className="flex flex-wrap justify-center gap-6 mb-12">
+        <a href="#prestacao-de-contas" className="text-blue-800 font-semibold hover:underline transition">Prestação de Contas</a>
+        <a href="#certificacoes" className="text-blue-800 font-semibold hover:underline transition">Certificações</a>
+        <a href="#institucional" className="text-blue-800 font-semibold hover:underline transition">Institucional</a>
+        <a href="#projetos-incentivados" className="text-blue-800 font-semibold hover:underline transition">Projetos Incentivados</a>
+      </header>
+      <section id="prestacao-de-contas">
       <h2 className="text-2xl font-bold text-blue-800 mb-6 text-center">PRESTAÇÃO DE CONTAS</h2>
       <div className="flex flex-wrap justify-center gap-32 mb-6 pb-10">
         {prestacaoContasBlocks.map((block, index) => (
@@ -126,9 +167,11 @@ export default function TransparenciaAdmin() {
           </div>
         ))}
       </div>
+      </section>
 
       <div className="w-full h-1 bg-red-600 mx-auto max-w-4xl mb-10"></div>
 
+      <section id="certificacoes">
       <h2 className="text-2xl font-bold text-blue-800 mb-6 text-center">Certificações</h2>
       <div className="flex flex-wrap justify-center gap-8 mb-6 pb-10">
         {certificacoesBlocks.map((block, index) => (
@@ -164,9 +207,10 @@ export default function TransparenciaAdmin() {
           </div>
         ))}
       </div>
+      </section>
 
       <div className="w-full h-1 bg-red-600 mx-auto max-w-4xl mb-10"></div>
-
+      <section id="institucional">
       <h2 className="text-2xl font-bold text-blue-800 mb-6 text-center">Institucional</h2>
       <div className="flex flex-wrap justify-center gap-8 mb-6 pb-10">
         {institucionalBlocks.map((block, index) => (
@@ -202,9 +246,10 @@ export default function TransparenciaAdmin() {
           </div>
         ))}
       </div>
+      </section>
 
       <div className="w-full h-1 bg-red-600 mx-auto max-w-4xl mb-10"></div>
-
+      <section id="projetos-incentivados">
       <h2 className="text-2xl font-bold text-blue-800 mb-6 text-center">Projetos Incentivados</h2>
       <div className="flex flex-wrap justify-center gap-8 mb-6 pb-10">
         {projetosIncentivadosBlocks.map((block, index) => (
@@ -240,6 +285,7 @@ export default function TransparenciaAdmin() {
           </div>
         ))}
       </div>
+      </section>
     </div>
   );
 }

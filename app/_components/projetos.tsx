@@ -14,7 +14,7 @@ interface Projeto {
 const projetos: Projeto[] = [
   {
     id: 1,
-    nome: 'Projeto Vôlei nas Escolas',
+    nome: 'Projeto Vôlei para todos',
     status: 'Em andamento',
     descricao: 'Aulas gratuitas de vôlei para crianças.',
     imagens: [

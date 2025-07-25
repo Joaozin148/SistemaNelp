@@ -274,6 +274,7 @@ export default function AboutUsSection() {
                   transition={{ duration: 0.8, delay: 0.9 }}
                 >
                   <motion.button
+                    onClick={() => window.open("https://drive.google.com/file/d/1N4wIUUh2sLjSWjz-gwdb6ARJ9vBJhVbw/view", "_blank")}  
                     className="bg-white text-[#202e44] px-4 py-2 rounded-full flex items-center gap-2 text-sm font-medium"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
