@@ -8,9 +8,9 @@ export default function MissaoDestaqueSection() {
         <Star className="w-7 h-7 text-yellow-400" /> Nossa Missão
       </h2>
       <p className="text-lg text-gray-700 mb-6">
-        Democratizar o acesso ao esporte de qualidade, promovendo o desenvolvimento físico, emocional e social de crianças e jovens em situação de vulnerabilidade no litoral do Paraná.
+      Transformar realidades por meio do esporte, formando cidadãos íntegros, conscientes e comprometidos com a construção de uma sociedade mais justa, saudável e solidária.
       </p>
-      <Link href="/aboutUs" className="inline-block bg-yellow-400 hover:bg-yellow-500 text-white font-semibold px-6 py-2 rounded transition-colors duration-200">
+      <Link href="/sobre-nos" className="inline-block bg-yellow-400 hover:bg-yellow-500 text-white font-semibold px-6 py-2 rounded transition-colors duration-200">
         Saiba mais
       </Link>
     </section>

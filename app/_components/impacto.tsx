@@ -15,7 +15,7 @@ export default function ImpactoSection() {
       </div>
       <div className="bg-white rounded-xl shadow-lg flex flex-col items-center p-8 border-t-4 border-yellow-500">
         <Star className="w-10 h-10 text-yellow-500 mb-2" />
-        <span className="text-3xl font-bold text-[#202e44]">12</span>
+        <span className="text-3xl font-bold text-[#202e44]">11</span>
         <span className="text-gray-600 mt-2">Anos de Atuação</span>
       </div>
     </section>

@@ -18,13 +18,19 @@ const Component = forwardRef<HTMLElement>((props, ref) => {
               Sobre a NELP
             </h1>
             <p className='text-lg sm:text-xl md:text-lg lg:text-xl max-w-6xl mx-auto px-4 sm:px-6 md:px-8 font-semibold text-center tracking-tight leading-[140%] mt-4'>
-              A NELP – Novo Esporte do Litoral Paranaense é uma organização sem fins lucrativos fundada com o propósito de transformar vidas por meio do esporte. Com sede em Paranaguá (PR), a entidade nasceu da união de profissionais da educação física, voluntários e lideranças comunitárias que enxergaram no esporte uma poderosa ferramenta de inclusão social, educação e cidadania.
+              A NELP – Novo Esporte do Litoral Paranaense é uma organização da sociedade civil, sediada em Paranaguá (PR), que atua com responsabilidade e compromisso social na formação de crianças e adolescentes por meio do esporte.
               <br />
               <br />
-              Desde sua criação, a NELP tem como missão democratizar o acesso ao esporte de qualidade, especialmente para crianças, adolescentes e jovens em situação de vulnerabilidade social no litoral do Paraná. Através de projetos esportivos gratuitos e ações comunitárias, a instituição promove o desenvolvimento físico, emocional e social dos participantes, contribuindo para a formação de cidadãos mais conscientes, saudáveis e preparados para o futuro.
+              Criada a partir da mobilização de educadores físicos, voluntários e lideranças comunitárias da região, a NELP surgiu com um objetivo claro: ampliar o acesso ao esporte de forma estruturada, gratuita e contínua, especialmente para jovens em contextos de vulnerabilidade.
               <br />
               <br />
-              Ao longo dos anos, a NELP firmou parcerias com órgãos públicos, empresas e apoiadores locais, consolidando seu compromisso com a transparência, a responsabilidade social e o desenvolvimento humano. Hoje, além das atividades esportivas regulares, a organização se destaca por sua atuação em projetos incentivados por leis de fomento ao esporte, sempre priorizando a ética e a prestação de contas à sociedade.
+              Ao longo dos anos, a organização tem se consolidado como referência no litoral paranaense pela seriedade do seu trabalho e pelo impacto direto que gera na vida dos participantes. Por meio de projetos esportivos regulares, acompanhados por profissionais capacitados, a NELP contribui não apenas para o desenvolvimento físico, mas também para a autonomia, autoestima e senso de coletividade de seus atletas.
+              <br />
+              <br />
+              Mais do que formar talentos esportivos, o foco está na formação de pessoas.
+              <br />
+              <br />
+              Hoje, com o apoio de parcerias públicas e privadas, a NELP desenvolve iniciativas viabilizadas por leis de incentivo ao esporte, mantendo um modelo de gestão transparente, ético e com foco em resultados concretos. Cada passo dado pela instituição reforça o compromisso com uma atuação responsável, baseada no diálogo com a comunidade e na construção de oportunidades reais para a juventude do litoral.
             </p>
 
             <a

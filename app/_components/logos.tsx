@@ -19,7 +19,7 @@ export default function LogoCloud() {
                                 <img
                                     className="mx-auto h-5 w-fit dark:invert"
                                     src="/logo_menu.png"
-                                    alt="Nvidia Logo"
+                                    alt="Catalini Logo"
                                     height="20"
                                     width="auto"
                                 />
@@ -28,8 +28,8 @@ export default function LogoCloud() {
                             <div className="flex">
                                 <img
                                     className="mx-auto h-4 w-fit dark:invert"
-                                    src="https://html.tailus.io/blocks/customers/column.svg"
-                                    alt="Column Logo"
+                                    src="/coamo_logo.png"
+                                    alt="Coamo Logo"
                                     height="16"
                                     width="auto"
                                 />
