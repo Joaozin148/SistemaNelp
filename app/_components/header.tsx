@@ -71,17 +71,17 @@ export function Header() {
 
   return (
     <>
-      <header className="fixed h-20 top-0 left-0 w-full z-20 bg-gradient-to-r from-yellow-300 via-yellow-500 to-blue-700 shadow-lg border-b-4 border-yellow-400">
+      <header className="fixed h-24 top-0 left-0 w-full z-20 bg-gradient-to-r from-yellow-300 via-yellow-500 to-blue-700 shadow-lg border-b-4 border-yellow-400">
         <div className="flex items-center justify-between w-full px-4 sm:px-6 lg:px-6 mx-auto max-w-8xl h-full">
           {/* Logo with volleyball icon */}
-          <div className="flex items-center gap-2">
-            <GiVolleyballBall className="text-white text-xl sm:text-2xl md:text-3xl drop-shadow-lg animate-bounce" />
-            <span className="font-extrabold text-lg sm:text-xl md:text-2xl text-white tracking-widest font-sans drop-shadow-lg">
+          <div className="flex items-center gap-3">
+            <GiVolleyballBall className="text-white text-3xl sm:text-4xl md:text-5xl drop-shadow-lg animate-bounce" />
+            <span className="font-extrabold text-2xl sm:text-3xl md:text-4xl text-white tracking-widest font-sans drop-shadow-lg">
               NELP UNIVÔLEI
             </span>
           </div>
 
-          <nav className="hidden md:flex items-center gap-6 font-semibold">
+          <nav className="hidden md:flex items-center gap-10 font-bold text-lg md:text-xl">
             <Link
               href="/"
               className="hover:text-yellow-300 transition-all duration-200 relative group"
@@ -130,8 +130,8 @@ export function Header() {
 
           <div className="flex items-center gap-2 sm:gap-4">
             <div className="relative flex items-center">
-              <span className="absolute left-2 sm:left-3 text-yellow-500">
-                <GiVolleyballBall className="w-4 sm:w-5 h-4 sm:h-5" />
+              <span className="absolute left-3 sm:left-4 text-yellow-500">
+                <GiVolleyballBall className="w-6 sm:w-7 h-6 sm:h-7" />
               </span>
               <input
                 type="text"
@@ -139,7 +139,7 @@ export function Header() {
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onKeyDown={handleSearch}
                 placeholder="Pesquisar..."
-                className="bg-white text-black rounded-full py-1 sm:py-2 px-8 sm:px-10 focus:outline-none h-8 mr-5 w-40 sm:w-48 border-2 border-yellow-400 text-xs sm:text-base"
+                className="bg-white text-black rounded-full py-2 sm:py-3 px-12 sm:px-14 focus:outline-none h-12 mr-7 w-56 sm:w-64 border-2 border-yellow-400 text-base sm:text-lg"
               />
             </div>
             <div className="md:hidden">
@@ -223,12 +223,12 @@ export function Header() {
                 </nav>
               </div>
             )}
-            <div className="hidden md:flex items-center gap-1 sm:gap-2 pr-2">
+            <div className="hidden md:flex items-center gap-3 sm:gap-4 pr-2">
               <Link href="https://www.instagram.com/nelp_univolei/" className="text-white hover:text-black">
-                <FaInstagram size={28} />
+                <FaInstagram size={36} />
               </Link>
               <Link href="https://www.facebook.com/nelpvoleibol" className="text-white hover:text-black">
-                <FaFacebook size={28} />
+                <FaFacebook size={36} />
               </Link>
             </div>
           </div>

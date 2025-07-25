@@ -13,22 +13,41 @@ export default function AboutUsSection() {
         </div>
       </div>
 
-      {/* Card centralizado com texto principal */}
-      <div className="flex justify-center -mt-20 mb-12 px-4">
-        <div className="bg-white/90 text-[#202e44] rounded-2xl shadow-2xl p-8 md:p-12 max-w-3xl w-full border-t-8 border-yellow-400 backdrop-blur-md">
-          <p className="text-lg md:text-xl font-medium text-center whitespace-pre-line">
-A NELP – Novo Esporte do Litoral Paranaense é uma organização da sociedade civil, sediada em Paranaguá (PR), que atua com responsabilidade e compromisso social na formação de crianças e adolescentes por meio do esporte.
-
-Criada a partir da mobilização de educadores físicos, voluntários e lideranças comunitárias da região, a NELP surgiu com um objetivo claro: ampliar o acesso ao esporte de forma estruturada, gratuita e contínua, especialmente para jovens em contextos de vulnerabilidade.
-
-Ao longo dos anos, a organização tem se consolidado como referência no litoral paranaense pela seriedade do seu trabalho e pelo impacto direto que gera na vida dos participantes. Por meio de projetos esportivos regulares, acompanhados por profissionais capacitados, a NELP contribui não apenas para o desenvolvimento físico, mas também para a autonomia, autoestima e senso de coletividade de seus atletas.
-
-Mais do que formar talentos esportivos, o foco está na formação de pessoas.
-
-Hoje, com o apoio de parcerias públicas e privadas, a NELP desenvolve iniciativas viabilizadas por leis de incentivo ao esporte, mantendo um modelo de gestão transparente, ético e com foco em resultados concretos. Cada passo dado pela instituição reforça o compromisso com uma atuação responsável, baseada no diálogo com a comunidade e na construção de oportunidades reais para a juventude do litoral.
-          </p>
+      {/* Nova seção de cards temáticos */}
+      <section className="w-full bg-[#16213a] py-16 px-4 flex justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl justify-items-center">
+          {/* Card 1 */}
+          <div className="bg-white text-[#202e44] rounded-2xl shadow-xl p-8 border-t-4 border-yellow-400 flex flex-col items-start transition-transform hover:-translate-y-2 hover:shadow-2xl duration-200">
+            <div className="mb-2 text-yellow-500 text-3xl">🏆</div>
+            <h3 className="text-xl font-bold mb-2 text-yellow-500">Quem Somos</h3>
+            <p className="text-base">A NELP – Novo Esporte do Litoral Paranaense é uma organização da sociedade civil, sediada em Paranaguá (PR), que atua com responsabilidade e compromisso social na formação de crianças e adolescentes por meio do esporte.</p>
+          </div>
+          {/* Card 2 */}
+          <div className="bg-white text-[#202e44] rounded-2xl shadow-xl p-8 border-t-4 border-yellow-400 flex flex-col items-start transition-transform hover:-translate-y-2 hover:shadow-2xl duration-200">
+            <div className="mb-2 text-yellow-500 text-3xl">🎯</div>
+            <h3 className="text-xl font-bold mb-2 text-yellow-500">Nossa Missão</h3>
+            <p className="text-base">Criada a partir da mobilização de educadores físicos, voluntários e lideranças comunitárias, a NELP surgiu com o objetivo de ampliar o acesso ao esporte de forma estruturada, gratuita e contínua, especialmente para jovens em contextos de vulnerabilidade.</p>
+          </div>
+          {/* Card 3 */}
+          <div className="bg-white text-[#202e44] rounded-2xl shadow-xl p-8 border-t-4 border-yellow-400 flex flex-col items-start transition-transform hover:-translate-y-2 hover:shadow-2xl duration-200">
+            <div className="mb-2 text-yellow-500 text-3xl">🌟</div>
+            <h3 className="text-xl font-bold mb-2 text-yellow-500">Reconhecimento e Impacto</h3>
+            <p className="text-base">Ao longo dos anos, a NELP se consolidou como referência no litoral paranaense pela seriedade do seu trabalho e pelo impacto direto que gera na vida dos participantes.</p>
+          </div>
+          {/* Card 4 - centralizado na segunda linha */}
+          <div className="bg-white text-[#202e44] rounded-2xl shadow-xl p-8 border-t-4 border-yellow-400 flex flex-col items-start transition-transform hover:-translate-y-2 hover:shadow-2xl duration-200 md:col-start-2">
+            <div className="mb-2 text-yellow-500 text-3xl">💪</div>
+            <h3 className="text-xl font-bold mb-2 text-yellow-500">Formação e Desenvolvimento</h3>
+            <p className="text-base">Por meio de projetos esportivos regulares, acompanhados por profissionais capacitados, a NELP contribui para o desenvolvimento físico, autonomia, autoestima e senso de coletividade dos atletas. Mais do que formar talentos esportivos, o foco está na formação de pessoas.</p>
+          </div>
+          {/* Card 5 - centralizado na segunda linha */}
+          <div className="bg-white text-[#202e44] rounded-2xl shadow-xl p-8 border-t-4 border-yellow-400 flex flex-col items-start transition-transform hover:-translate-y-2 hover:shadow-2xl duration-200 md:col-start-3">
+            <div className="mb-2 text-yellow-500 text-3xl">🤝</div>
+            <h3 className="text-xl font-bold mb-2 text-yellow-500">Gestão e Compromisso</h3>
+            <p className="text-base">Com apoio de parcerias públicas e privadas, a NELP desenvolve iniciativas viabilizadas por leis de incentivo ao esporte, mantendo um modelo de gestão transparente, ético e com foco em resultados concretos. O compromisso é sempre com uma atuação responsável e diálogo com a comunidade.</p>
+          </div>
         </div>
-      </div>
+      </section>
 
       {/* Grid de fotos */}
       <div className="container mx-auto max-w-5xl mb-16 px-4">
