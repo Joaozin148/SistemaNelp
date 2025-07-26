@@ -1,10 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
 import { useEffect } from "react";
 
 export default function TransparenciaAdmin() {
-  // Define separate arrays for each topic
-const uniformesBlocks = [
+  const uniformesBlocks = [
     {
       id: 1,
       title: 'Uniforme Branco',
@@ -45,24 +45,20 @@ const uniformesBlocks = [
     },
   ];
 
-
   useEffect(() => {
-    const handleClick = (e: Event) => {
-      const target = e.target as HTMLAnchorElement;
+    const handleClick = (e: any) => {
+      const target = e.target;
       if (target.tagName === 'A' && target.hash) {
         const section = document.querySelector(target.hash);
         if (section) {
           e.preventDefault();
-          setTimeout(() => {
-            const rect = section.getBoundingClientRect();
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            let offset = rect.top + scrollTop - (window.innerHeight / 2) + (rect.height / 2);
-            if (offset < 0) offset = 0;
-            window.scrollTo({
-              top: offset,
-              behavior: 'smooth',
-            });
-          }, 10);
+          const rect = section.getBoundingClientRect();
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          const offset = rect.top + scrollTop - 100;
+          window.scrollTo({
+            top: offset,
+            behavior: 'smooth',
+          });
         }
       }
     };
@@ -78,93 +74,105 @@ const uniformesBlocks = [
   }, []);
 
   return (
-
-    <div className="p-4 max-w-7xl mx-auto pt-24">
-        {/* <header id="transparencia-header" className="flex flex-wrap justify-center gap-6 mb-12">
-        <a href="#prestacao-de-contas" className="text-blue-800 font-semibold hover:underline transition">Unifo</a>
-        <a href="#certificacoes" className="text-blue-800 font-semibold hover:underline transition">Certificações</a>
-        <a href="#institucional" className="text-blue-800 font-semibold hover:underline transition">Institucional</a>
-        <a href="#projetos-incentivados" className="text-blue-800 font-semibold hover:underline transition">Projetos Incentivados</a>
-      </header> */}
-      <section id="prestacao-de-contas">
-      <h2 className="text-2xl font-bold text-blue-800 mb-6 text-center">Uniformes</h2>
-      <div className="flex flex-wrap justify-center gap-32 mb-6 pb-10">
-        {uniformesBlocks.map((block, index) => (
-          <div key={block.id} className="flex flex-col items-center w-48">
-            <div className="bg-yellow-400 rounded-full p-2 mb-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+    <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        {/* Header Navigation */}
+        <header id="transparencia-header" className="bg-white shadow-sm rounded-lg p-6 mb-12">
+          <nav className="flex flex-wrap justify-center gap-4 sm:gap-8">
+            {['prestacao-de-contas', 'institucional'].map((section) => (
+              <a
+                key={section}
+                href={`#${section}`}
+                className="text-blue-600 hover:text-blue-800 font-medium text-lg transition-colors duration-200 relative group"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 4v12"
-                />
-              </svg>
-            </div>
-            <p className="font-bold text-blue-800 mb-1 text-center">{block.title}</p>
-            <a
-              href={block.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-500 hover:underline text-center"
-            >
-              Clique aqui e baixe o arquivo
-            </a>
-            {index < uniformesBlocks.length - 1 && (
-              <div className="w-10 h-0.5 bg-yellow-400 mx-auto mt-2"></div>
-            )}
-          </div>
-        ))}
-      </div>
-      </section>
+                {section === 'prestacao-de-contas' ? 'Uniformes' : 'Institucional'}
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
+              </a>
+            ))}
+          </nav>
+        </header>
 
-
-      <div className="w-full h-1 bg-red-600 mx-auto max-w-4xl mb-10"></div>
-      <section id="institucional">
-      <h2 className="text-2xl font-bold text-blue-800 mb-6 text-center">Institucional</h2>
-      <div className="flex flex-wrap justify-center gap-8 mb-6 pb-10">
-        {institucionalBlocks.map((block, index) => (
-          <div key={block.id} className="flex flex-col items-center w-48">
-            <div className="bg-yellow-400 rounded-full p-2 mb-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+        {/* Uniformes Section */}
+        <section id="prestacao-de-contas" className="mb-16">
+          <h2 className="text-3xl font-bold text-blue-800 mb-8 text-center">Uniformes</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {uniformesBlocks.map((block) => (
+              <div
+                key={block.id}
+                className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center hover:shadow-lg transition-shadow duration-200"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 4v12"
-                />
-              </svg>
-            </div>
-            <p className="font-bold text-blue-800 mb-1 text-center">{block.title}</p>
-            <a
-              href={block.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-500 hover:underline text-center"
-            >
-              Clique aqui e baixe o arquivo
-            </a>
-            {index < institucionalBlocks.length - 1 && (
-              <div className="w-10 h-0.5 bg-yellow-400 mx-auto mt-2"></div>
-            )}
+                <div className="bg-yellow-400 rounded-full p-3 mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-8 w-8 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 4v12"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold text-blue-800 mb-2 text-center">{block.title}</h3>
+                <a
+                  href={block.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200"
+                >
+                  Baixar Arquivo
+                </a>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-      </section>
+        </section>
 
-      
+        {/* Divider */}
+        <div className="w-full h-1 bg-red-600 mx-auto max-w-4xl mb-16 rounded"></div>
+
+        {/* Institucional Section */}
+        <section id="institucional">
+          <h2 className="text-3xl font-bold text-blue-800 mb-8 text-center">Institucional</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {institucionalBlocks.map((block) => (
+              <div
+                key={block.id}
+                className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center hover:shadow-lg transition-shadow duration-200"
+              >
+                <div className="bg-yellow-400 rounded-full p-3 mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-8 w-8 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 4v12"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold text-blue-800 mb-2 text-center">{block.title}</h3>
+                <a
+                  href={block.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200"
+                >
+                  Baixar Arquivo
+                </a>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
     </div>
   );
 }
