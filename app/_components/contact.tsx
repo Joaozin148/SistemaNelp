@@ -78,7 +78,7 @@ export const Contact2 = ({
             {/* Coluna da direita: formulário com menina */}
             <div className="flex-1 flex items-center justify-end w-full relative">
               <div className="relative w-full max-w-md sm:max-w-md">
-                <form action="https://formsubmit.co/mucaguibor@gmail.com" method="POST" className="bg-white/20 backdrop-blur-md rounded-2xl shadow-2xl border border-yellow-400 p-4 sm:p-6 flex flex-col gap-4">
+                <form className="bg-white/20 backdrop-blur-md rounded-2xl shadow-2xl border border-yellow-400 p-4 sm:p-6 flex flex-col gap-4">
                   <div className="flex flex-col sm:flex-row gap-4">
                     <div className="grid w-full items-center gap-1.5">
                       <Label className="text-yellow-400 text-sm sm:text-base" htmlFor="firstname">
@@ -87,7 +87,6 @@ export const Contact2 = ({
                       <Input
                         type="text"
                         id="firstname"
-                        name="firstname"
                         placeholder="Digite seu nome"
                         className="bg-white/80 text-sm sm:text-base"
                       />
@@ -99,7 +98,6 @@ export const Contact2 = ({
                       <Input
                         type="text"
                         id="lastname"
-                        name="lastname"
                         placeholder="Digite seu sobrenome"
                         className="bg-white/80 text-sm sm:text-base"
                       />
@@ -112,7 +110,6 @@ export const Contact2 = ({
                     <Input
                       type="email"
                       id="email"
-                      name="email"
                       placeholder="Digite seu e-mail"
                       className="bg-white/80 text-sm sm:text-base"
                     />
@@ -124,7 +121,6 @@ export const Contact2 = ({
                     <Input
                       type="tel"
                       id="phone"
-                      name="phone"
                       placeholder="Informe seu Telefone"
                       className="bg-white/80 text-sm sm:text-base"
                     />
@@ -134,7 +130,6 @@ export const Contact2 = ({
                       Mensagem
                     </Label>
                     <Textarea
-                      name="message"
                       placeholder="Digite sua mensagem aqui."
                       id="message"
                       className="bg-white/80 text-sm sm:text-base h-24"

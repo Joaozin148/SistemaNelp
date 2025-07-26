@@ -4,44 +4,7 @@ import { useEffect } from "react";
 
 export default function TransparenciaAdmin() {
   // Define separate arrays for each topic
-
-
-  const institucionalBlocks = [
-    {
-      id: 1,
-      title: 'Modelo Parecer Fiscal (2022)',
-      url: 'https://drive.google.com/file/d/1HsRo00oqQ-eJj-i5NR8ZqJuouVGgf13-/view',
-    },
-    {
-      id: 2,
-      title: 'Modelo Parecer Fiscal (2023)',
-      url: 'https://drive.google.com/file/d/1YRo9gDvW7qgg0guJ8NFw4swwAlfhu6pb/view',
-    },
-    {
-      id: 3,
-      title: 'Ata Homologação Diretoria (2024-2026)',
-      url: 'https://drive.google.com/file/d/1be5AbvFbQh-cgof2-m23rNRdSuJu6LZh/view',
-    },
-    {
-      id: 4,
-      title: 'Estatuto',
-      url: 'https://drive.google.com/file/d/1ezlGXPpgeCZZ_NmwAHpv7H8V5jAynTNa/view',
-    },
-    {
-      id: 5,
-      title: 'Analise Frequencia (2 Semestre de 2023 ao 1 Semestre 2025)',
-      url: 'https://drive.google.com/file/d/1yfvfsxEx9YfWRtFWDEDiBi2x06Z6-oAK/view',
-    },
-    {
-      id: 6,
-      title: 'Edital Para Eleição',
-      url: 'https://drive.google.com/file/d/1BLgYbRKIc7gIc27i1rIUqvYwIy25mlvm/views',
-    },
-    
-  ];
-
-
-    const uniformesBlocks = [
+const uniformesBlocks = [
     {
       id: 1,
       title: 'Uniforme Branco',
@@ -52,8 +15,36 @@ export default function TransparenciaAdmin() {
       title: 'Uniforme Preto',
       url: 'https://drive.google.com/file/d/1OcuYfMeCh_oeY9HVaguaWj7WFeQj8eOv/view',
     },
-
   ];
+
+  const institucionalBlocks = [
+    {
+      id: 1,
+      title: 'Estatuto Social',
+      url: '#',
+    },
+    {
+      id: 2,
+      title: 'Regimento Interno',
+      url: '#',
+    },
+    {
+      id: 3,
+      title: 'Relatório Anual Institucional 2022',
+      url: '#',
+    },
+    {
+      id: 4,
+      title: 'Plano Estratégico 2023-2025',
+      url: '#',
+    },
+    {
+      id: 5,
+      title: 'Plano Estratégico 2020-2022',
+      url: '#',
+    },
+  ];
+
 
   useEffect(() => {
     const handleClick = (e: Event) => {
@@ -89,19 +80,15 @@ export default function TransparenciaAdmin() {
   return (
 
     <div className="p-4 max-w-7xl mx-auto pt-24">
-        <header id="transparencia-header" className="flex flex-wrap justify-center gap-6 mb-12">
-          <a href="#prestacao-de-contas" className="text-blue-800 font-semibold hover:underline transition">Prestação de Contas</a>
-          <a href="#certificacoes" className="text-blue-800 font-semibold hover:underline transition">Certificações</a>
-          <a href="#uniformes" className="text-blue-800 font-semibold hover:underline transition">Uniformes</a>
-          <a href="#institucional" className="text-blue-800 font-semibold hover:underline transition">Institucional</a>
-          <a href="#projetos-incentivados" className="text-blue-800 font-semibold hover:underline transition">Projetos Incentivados</a>
-        </header>
-     
-
-
-      <section id="uniformes">
+        {/* <header id="transparencia-header" className="flex flex-wrap justify-center gap-6 mb-12">
+        <a href="#prestacao-de-contas" className="text-blue-800 font-semibold hover:underline transition">Unifo</a>
+        <a href="#certificacoes" className="text-blue-800 font-semibold hover:underline transition">Certificações</a>
+        <a href="#institucional" className="text-blue-800 font-semibold hover:underline transition">Institucional</a>
+        <a href="#projetos-incentivados" className="text-blue-800 font-semibold hover:underline transition">Projetos Incentivados</a>
+      </header> */}
+      <section id="prestacao-de-contas">
       <h2 className="text-2xl font-bold text-blue-800 mb-6 text-center">Uniformes</h2>
-      <div className="flex flex-wrap justify-center gap-8 mb-6 pb-10">
+      <div className="flex flex-wrap justify-center gap-32 mb-6 pb-10">
         {uniformesBlocks.map((block, index) => (
           <div key={block.id} className="flex flex-col items-center w-48">
             <div className="bg-yellow-400 rounded-full p-2 mb-2">
@@ -136,6 +123,7 @@ export default function TransparenciaAdmin() {
         ))}
       </div>
       </section>
+
 
       <div className="w-full h-1 bg-red-600 mx-auto max-w-4xl mb-10"></div>
       <section id="institucional">

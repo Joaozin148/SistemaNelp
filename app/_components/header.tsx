@@ -128,7 +128,7 @@ export function Header() {
             )}
           </nav>
 
-          <div className="flex items-center sm:gap-4">
+          <div className="flex items-center gap-2 sm:gap-4">
             <div className="relative flex items-center">
               <span className="absolute left-3 sm:left-4 text-yellow-500">
                 <GiVolleyballBall className="w-6 sm:w-7 h-6 sm:h-7" />
@@ -139,7 +139,7 @@ export function Header() {
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onKeyDown={handleSearch}
                 placeholder="Pesquisar..."
-                className="bg-white text-black rounded-full py-2 sm:py-3 px-9 sm:px-14 focus:outline-none h-12 mr-7 w-36 sm:w-64 border-2 border-yellow-400 text-base sm:text-lg"
+                className="bg-white text-black rounded-full py-2 sm:py-3 px-12 sm:px-14 focus:outline-none h-12 mr-7 w-56 sm:w-64 border-2 border-yellow-400 text-base sm:text-lg"
               />
             </div>
             <div className="md:hidden">
