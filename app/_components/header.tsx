@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from "react";
@@ -52,11 +51,28 @@ export function Header() {
   // Handle search when Enter is pressed
   const handleSearch = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter" && searchQuery.trim()) {
-      const results = pageContent.filter(
-        (page) =>
-          page.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          page.description.toLowerCase().includes(searchQuery.toLowerCase())
-      );
+      // Normalize search query by removing accents
+      const normalizedQuery = searchQuery
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+
+      const results = pageContent.filter((page) => {
+        // Normalize title and description by removing accents
+        const normalizedTitle = page.title
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "");
+        const normalizedDescription = page.description
+          .toLowerCase()
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "");
+
+        return (
+          normalizedTitle.includes(normalizedQuery) ||
+          normalizedDescription.includes(normalizedQuery)
+        );
+      });
       setSearchResults(results);
       setIsModalOpen(true);
     }
