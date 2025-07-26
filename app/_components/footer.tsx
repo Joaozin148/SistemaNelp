@@ -52,7 +52,7 @@ export default function FooterSection() {
         </div>
       </div>
       <div className="mt-12 border-t border-[#222] pt-6 text-center text-gray-400 text-sm">
-        © {new Date().getFullYear()} ESPORTE - Qualidade de Vida e Inclusão Social
+        © {new Date().getFullYear()}  NELP UNIVOLEI - Todos os direitos reservados
       </div>
     </footer>
   );
