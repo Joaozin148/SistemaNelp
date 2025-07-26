@@ -19,14 +19,16 @@ const projetos: Projeto[] = [
     status: 'Em andamento',
     descricao: 'Parceria com a rede pública de ensino de Paranaguá para oferecer atividades esportivas dentro do ambiente escolar. ',
     imagens: [
-      '/escolas.jpeg',
-      '/arminda.jpeg',
-      '/escolas1.jpeg',
-      '/projeto1.jpg',
-      '/projeto1.1.jpg',
-      '/aula1.jpg',
-      '/aula2.jpg',
-
+      '/atividade1.jpg',
+      '/atividade.jpg',
+      '/atividade2.jpg',
+      '/atividade3.jpg',
+      '/atividade4.jpg',
+      '/atividade5.jpg',
+      '/atividade6.jpg',
+      '/atividade7.jpg',
+      '/atividade8.jpg',
+     
     ],
     descricaoLonga: 'O projeto leva aulas de vôlei para escolas públicas, promovendo inclusão e saúde...'
   },
