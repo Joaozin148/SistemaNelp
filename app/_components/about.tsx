@@ -2,7 +2,7 @@
 "use client"
 
 import Link from "next/link"
-
+import { FileText, Download, Star, Users, Target, Trophy, Heart, Shield, TrendingUp } from "lucide-react"
 
 export default function AboutUsSection() {
   return (
@@ -37,37 +37,82 @@ export default function AboutUsSection() {
             <h3 className="text-xl font-bold mb-2 text-yellow-500">Reconhecimento e Impacto</h3>
             <p className="text-base">Ao longo dos anos, a NELP se consolidou como referência no litoral paranaense pela seriedade do seu trabalho e pelo impacto direto que gera na vida dos participantes.</p>
           </div>
-          {/* Card 4 - centralizado na segunda linha */}
-          <div className="bg-white text-[#202e44] rounded-2xl shadow-xl p-8 border-t-4 border-yellow-400 flex flex-col items-start transition-transform hover:-translate-y-2 hover:shadow-2xl duration-200 md:col-start-2">
+          {/* Card 4 */}
+          <div className="bg-white text-[#202e44] rounded-2xl shadow-xl p-8 border-t-4 border-yellow-400 flex flex-col items-start transition-transform hover:-translate-y-2 hover:shadow-2xl duration-200">
             <div className="mb-2 text-yellow-500 text-3xl">💪</div>
             <h3 className="text-xl font-bold mb-2 text-yellow-500">Formação e Desenvolvimento</h3>
             <p className="text-base">Por meio de projetos esportivos regulares, acompanhados por profissionais capacitados, a NELP contribui para o desenvolvimento físico, autonomia, autoestima e senso de coletividade dos atletas. Mais do que formar talentos esportivos, o foco está na formação de pessoas.</p>
           </div>  
-          {/* Card 5 - centralizado na segunda linha */}
-          <div className="bg-white text-[#202e44] rounded-2xl shadow-xl p-8 border-t-4 border-yellow-400 flex flex-col items-start transition-transform hover:-translate-y-2 hover:shadow-2xl duration-200 md:col-start-3">
+          {/* Card 5 */}
+          <div className="bg-white text-[#202e44] rounded-2xl shadow-xl p-8 border-t-4 border-yellow-400 flex flex-col items-start transition-transform hover:-translate-y-2 hover:shadow-2xl duration-200">
             <div className="mb-2 text-yellow-500 text-3xl">🤝</div>
             <h3 className="text-xl font-bold mb-2 text-yellow-500">Gestão e Compromisso</h3>
             <p className="text-base">Com apoio de parcerias públicas e privadas, a NELP desenvolve iniciativas viabilizadas por leis de incentivo ao esporte, mantendo um modelo de gestão transparente, ético e com foco em resultados concretos. O compromisso é sempre com uma atuação responsável e diálogo com a comunidade.</p>
+          </div>
+          {/* Card 6 - Novo card para completar o grid */}
+          <div className="bg-white text-[#202e44] rounded-2xl shadow-xl p-8 border-t-4 border-yellow-400 flex flex-col items-start transition-transform hover:-translate-y-2 hover:shadow-2xl duration-200">
+            <div className="mb-2 text-yellow-500 text-3xl">🏅</div>
+            <h3 className="text-xl font-bold mb-2 text-yellow-500">Resultados e Conquistas</h3>
+            <p className="text-base">Com mais de 11 anos de atuação, a NELP já impactou mais de 1200 jovens, conquistou diversos títulos esportivos e formou cidadãos comprometidos com valores como disciplina, trabalho em equipe e superação. Nossos resultados são a prova do poder transformador do esporte.</p>
           </div>
         </div>
 
       </section>
 
-    <section className="w-full flex flex-col items-center justify-center py-12 bg-[#202e44]">
-      <p className="text-lg text-white mb-4 text-center max-w-xl">
-        Acesse o nosso portifolio bacana
-      </p>
-      <Link
-        href="/transparencia"
-        className="px-6 py-2 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold rounded shadow transition-colors"
-      >
-        Acesse aqui
-      </Link>
-    </section>
+      {/* Seção do Portfólio Melhorada */}
+      <section className="w-full flex flex-col items-center justify-center py-16 bg-gradient-to-r from-[#202e44] to-[#16213a]">
+        <div className="text-center max-w-4xl mx-auto px-4">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full mb-6">
+            <FileText className="w-8 h-8 text-white" />
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Nosso Portfólio de Realizações
+          </h2>
+          <p className="text-lg text-yellow-200 mb-8 text-center max-w-2xl">
+            Conheça nossos projetos, conquistas e o impacto que geramos na comunidade através do esporte
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href="/portifolio.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-400 text-white font-bold rounded-full shadow-lg transition-all duration-300 transform hover:scale-105"
+            >
+              <Download className="w-5 h-5" />
+              Baixar Portfólio PDF
+            </a>
+            
+            <Link
+              href="/transparencia"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-transparent border-2 border-yellow-400 hover:bg-yellow-400 text-yellow-400 hover:text-white font-bold rounded-full transition-all duration-300 transform hover:scale-105"
+            >
+              <Star className="w-5 h-5" />
+              Portal de Transparência
+            </Link>
+          </div>
+          
+          <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-yellow-200">
+            <div className="flex items-center gap-2">
+              <Users className="w-4 h-4" />
+              <span>+1200 Jovens Impactados</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Trophy className="w-4 h-4" />
+              <span>Múltiplos Títulos</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Heart className="w-4 h-4" />
+              <span>11 Anos de Atuação</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Depoimento em destaque */}
       <div className="max-w-2xl mx-auto mb-12 px-4 pt-10">
         <blockquote className="italic text-xl md:text-2xl text-yellow-200 border-l-8 border-yellow-400 pl-6 py-4 bg-[#202e44]/80 rounded-xl shadow">
-          “O esporte mudou minha vida e me ensinou a nunca desistir dos meus sonhos.”
+          "O esporte mudou minha vida e me ensinou a nunca desistir dos meus sonhos."
           <br />
           <span className="text-base text-yellow-300 font-bold">— Participante NELP</span>
         </blockquote>
