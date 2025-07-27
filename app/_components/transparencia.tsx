@@ -12,14 +12,14 @@ export default function TransparenciaAdmin() {
   const uniformesBlocks = [
     {
       id: 1,
-      title: 'Uniforme Branco',
+      title: 'Uniforme Branco 2023-2024',
       description: 'Uniforme oficial para jogos em casa',
       url: 'https://drive.google.com/file/d/1mN_DNS01QSI-oJGOmuFgljufhRO8EAdF/view',
       icon: <FileText className="w-6 h-6" />,
     },
     {
       id: 2,
-      title: 'Uniforme Preto',
+      title: 'Uniforme Preto 2023-2024',
       description: 'Uniforme oficial para jogos fora de casa',
       url: 'https://drive.google.com/file/d/1OcuYfMeCh_oeY9HVaguaWj7WFeQj8eOv/view',
       icon: <FileText className="w-6 h-6" />,
