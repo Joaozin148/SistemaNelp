@@ -155,7 +155,7 @@ export function Header() {
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onKeyDown={handleSearch}
                 placeholder="Pesquisar..."
-                className="bg-white text-black rounded-full py-2 sm:py-3 px-12 sm:px-14 focus:outline-none h-12 mr-7 w-56 sm:w-64 border-2 border-yellow-400 text-base sm:text-lg"
+                className="bg-white text-black rounded-full py-2 sm:py-3 px-12 sm:px-14 focus:outline-none h-12 w-40 sm:w-64 border-2 border-yellow-400 text-base sm:text-lg"
               />
             </div>
             <div className="md:hidden">
