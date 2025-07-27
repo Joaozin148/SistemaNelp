@@ -46,7 +46,7 @@ export default function LogoCloud() {
                             <div className="flex">
                                 <img
                                     className="mx-auto h-14 w-fit dark:invert"
-                                    src="/tcp_logo2.png"
+                                    src="/tcp_logo2.PNG"
                                     alt="Nike Logo"
                                     height="20"
                                     width="auto"

@@ -13,7 +13,26 @@ export default function FAQsFour() {
         {
             id: 'item-2',
             question: 'Quais são os horários dos treinos?',
-            answer: 'Os treinos acontecem de segunda a sexta, das 18h às 22h, e aos sábados das 8h às 12h. Consulte nossa equipe para horários específicos por categoria.',
+            answer: `
+Arena Albertina – Manhã:
+- 9h30: 14 a 16 anos
+- 10h30: 13 anos ou menos
+
+Arena Albertina – Tarde:
+- 13h30 às 14h30: 15 e 14 anos
+- 14h30 às 15h30: 13 e 12 anos
+- 15h30 às 16h30: 11 anos ou menos
+- 16h30 às 17h30: Intermediário (14 anos masculino)
+
+Jardim Esperança – Hélio Alves (Terças e Quintas):
+- 15h30 às 16h45: 11 a 14 anos
+- 16h45 às 18h: 15 a 17 anos
+*Início: 14 de abril*
+
+Times de rendimento (Segundas, Quartas e Sextas):
+- Manhã: 9h às 10h30
+- Tarde: 13h30 às 19h
+            `.trim().replace(/\n/g, '<br />'),
         },
         {
             id: 'item-3',
@@ -58,7 +77,7 @@ export default function FAQsFour() {
                                         {item.question}
                                     </AccordionTrigger>
                                     <AccordionContent className="px-6 pb-4 text-base text-gray-800">
-                                        {item.answer}
+                                        <div dangerouslySetInnerHTML={{ __html: item.answer }} />
                                     </AccordionContent>
                                 </AccordionItem>
                             </div>
