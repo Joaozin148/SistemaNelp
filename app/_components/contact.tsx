@@ -1,10 +1,12 @@
+"use client"
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import React, { useState } from "react";
 
 import { Button } from "@/app/_components/ui/button";
 import { Input } from "@/app/_components/ui/input";
 import { Label } from "@/app/_components/ui/label";
 import { Textarea } from "@/app/_components/ui/textarea";
+import { toast } from "sonner";
 
 interface Contact2Props {
   title?: string;
@@ -20,6 +22,34 @@ export const Contact2 = ({
   phone = "(41) 99510-9690",
   email = "nelpunivolei@gmail.com",
 }: Contact2Props) => {
+  const [form, setForm] = useState({
+    firstname: '',
+    lastname: '',
+    email: '',
+    phone: '',
+    message: '',
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setForm({ ...form, [e.target.id]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form),
+    });
+
+    if (res.ok) {
+      toast.success("Mensagem Enviada com sucesso!");
+      setForm({ firstname: '', lastname: '', email: '', phone: '', message: '' });
+    } else {
+      alert('Erro ao enviar. Tente novamente mais tarde.');
+    }
+  };
   return (
     <section
       id="contato"
@@ -78,7 +108,7 @@ export const Contact2 = ({
             {/* Coluna da direita: formulário com menina */}
             <div className="flex-1 flex items-center justify-end w-full relative">
               <div className="relative w-full max-w-md sm:max-w-md">
-                <form className="bg-white/20 backdrop-blur-md rounded-2xl shadow-2xl border border-yellow-400 p-4 sm:p-6 flex flex-col gap-4">
+                <form onSubmit={handleSubmit} method="POST" className="bg-white/20 backdrop-blur-md rounded-2xl shadow-2xl border border-yellow-400 p-4 sm:p-6 flex flex-col gap-4">
                   <div className="flex flex-col sm:flex-row gap-4">
                     <div className="grid w-full items-center gap-1.5">
                       <Label className="text-yellow-400 text-sm sm:text-base" htmlFor="firstname">
@@ -86,9 +116,11 @@ export const Contact2 = ({
                       </Label>
                       <Input
                         type="text"
+                        onChange={handleChange}
                         id="firstname"
                         placeholder="Digite seu nome"
                         className="bg-white/80 text-sm sm:text-base"
+                        required
                       />
                     </div>
                     <div className="grid w-full items-center gap-1.5">
@@ -96,10 +128,12 @@ export const Contact2 = ({
                         Sobrenome
                       </Label>
                       <Input
+                        onChange={handleChange}
                         type="text"
                         id="lastname"
                         placeholder="Digite seu sobrenome"
                         className="bg-white/80 text-sm sm:text-base"
+                        required
                       />
                     </div>
                   </div>
@@ -108,10 +142,12 @@ export const Contact2 = ({
                       E-mail
                     </Label>
                     <Input
+                      onChange={handleChange}
                       type="email"
                       id="email"
                       placeholder="Digite seu e-mail"
                       className="bg-white/80 text-sm sm:text-base"
+                      required
                     />
                   </div>
                   <div className="grid w-full items-center gap-1.5">
@@ -120,9 +156,11 @@ export const Contact2 = ({
                     </Label>
                     <Input
                       type="tel"
+                      onChange={handleChange}
                       id="phone"
                       placeholder="Informe seu Telefone"
                       className="bg-white/80 text-sm sm:text-base"
+                      required
                     />
                   </div>
                   <div className="grid w-full gap-1.5">
@@ -130,9 +168,11 @@ export const Contact2 = ({
                       Mensagem
                     </Label>
                     <Textarea
+                      onChange={handleChange}
                       placeholder="Digite sua mensagem aqui."
                       id="message"
                       className="bg-white/80 text-sm sm:text-base h-24"
+                      required
                     />
                   </div>
                   <Button className="w-full bg-gradient-to-r from-yellow-400 via-yellow-500 to-blue-700 text-black font-bold text-sm sm:text-lg py-2 sm:py-3 rounded-xl shadow hover:from-yellow-500 hover:to-blue-800 transition">

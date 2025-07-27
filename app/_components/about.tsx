@@ -2,7 +2,7 @@
 "use client"
 
 import Link from "next/link"
-import { FileText, Download, Star, Users, Target, Trophy, Heart, Shield, TrendingUp } from "lucide-react"
+import { FileText, Download, Star, Users, Trophy, Heart } from "lucide-react"
 
 export default function AboutUsSection() {
   return (
@@ -74,7 +74,7 @@ export default function AboutUsSection() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="/portifolio.pdf"
+              href="https://drive.google.com/file/d/1Myt6MbJjVHWpZSI4u5WKvwVYtOTcp8mq/view"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-400 text-white font-bold rounded-full shadow-lg transition-all duration-300 transform hover:scale-105"
@@ -112,7 +112,7 @@ export default function AboutUsSection() {
       {/* Depoimento em destaque */}
       <div className="max-w-2xl mx-auto mb-12 px-4 pt-10">
         <blockquote className="italic text-xl md:text-2xl text-yellow-200 border-l-8 border-yellow-400 pl-6 py-4 bg-[#202e44]/80 rounded-xl shadow">
-          "O esporte mudou minha vida e me ensinou a nunca desistir dos meus sonhos."
+          O esporte mudou minha vida e me ensinou a nunca desistir dos meus sonhos.
           <br />
           <span className="text-base text-yellow-300 font-bold">— Participante NELP</span>
         </blockquote>

@@ -1,7 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @next/next/no-img-element */
 'use client';
 
 import { useState, useEffect } from "react";
-import { FileText, Download, Calendar, Building, Award, Users, TrendingUp, Shield, Eye, User, Crown, DollarSign, ClipboardList, Users2 } from "lucide-react";
+import { FileText, Download, Calendar, Building, Award, Users, TrendingUp, Shield, Eye, Crown, DollarSign, ClipboardList, Users2 } from "lucide-react";
 
 export default function TransparenciaAdmin() {
   const [activeTab, setActiveTab] = useState('institucional');
@@ -102,35 +105,35 @@ export default function TransparenciaAdmin() {
     
   ];
 
-    const certificacoesBlocks = [
-     /*{
-      id: 1,
-      title: 'Certificado ISO 9001',
-      description: 'Certificação de qualidade',
-      url: '#',
-      icon: <Award className="w-6 h-6" />,
-      category: 'Certificações'
-    },
-    {
-      id: 2,
-      title: 'Certificado de Sustentabilidade',
-      description: 'Compromisso com práticas sustentáveis',
-      url: '#',
-      icon: <Award className="w-6 h-6" />,
-      category: 'Certificações'
-    },
-    {
-      id: 3,
-      title: 'Certificado de Qualidade 2022',
-      description: 'Reconhecimento de qualidade',
-      url: '#',
-      icon: <Award className="w-6 h-6" />,
-      category: 'Certificações'
-    }, */
-  ];
+     const certificacoesBlocks = [
+      {
+       id: 1,
+       title: 'Certificado ISO 9001',
+       description: 'Certificação de qualidade',
+       url: '#',
+       icon: <Award className="w-6 h-6" />,
+       category: 'Certificações'
+     },
+     {
+       id: 2,
+       title: 'Certificado de Sustentabilidade',
+       description: 'Compromisso com práticas sustentáveis',
+       url: '#',
+       icon: <Award className="w-6 h-6" />,
+       category: 'Certificações'
+     },
+     {
+       id: 3,
+       title: 'Certificado de Qualidade 2022',
+       description: 'Reconhecimento de qualidade',
+       url: '#',
+       icon: <Award className="w-6 h-6" />,
+       category: 'Certificações'
+     }, 
+   ];
 
-    const projetosIncentivadosBlocks = [
-    /*{
+     const projetosIncentivadosBlocks = [
+    {
       id: 1,
       title: 'Projeto Cultural 2022',
       description: 'Iniciativas culturais desenvolvidas',
@@ -153,8 +156,8 @@ export default function TransparenciaAdmin() {
       url: '#',
       icon: <Users className="w-6 h-6" />,
       category: 'Projetos'
-    }, */
-  ];
+    }, 
+   ];
 
   // Dados do organograma
   const organogramaData = {
@@ -219,8 +222,8 @@ export default function TransparenciaAdmin() {
   const tabs = [
     { id: 'institucional', label: 'Institucional', icon: <Building className="w-5 h-5" /> },
     { id: 'financeiro', label: 'Financeiro', icon: <TrendingUp className="w-5 h-5" /> },
-    { id: 'certificacoes', label: 'Certificações', icon: <Award className="w-5 h-5" /> },
-    { id: 'projetos', label: 'Projetos', icon: <Users className="w-5 h-5" /> },
+    // { id: 'certificacoes', label: 'Certificações', icon: <Award className="w-5 h-5" /> },
+    // { id: 'projetos', label: 'Projetos', icon: <Users className="w-5 h-5" /> },
     { id: 'organograma', label: 'Organograma', icon: <Users2 className="w-5 h-5" /> },
     { id: 'uniformes', label: 'Uniformes', icon: <FileText className="w-5 h-5" /> },
   ];
@@ -231,10 +234,10 @@ export default function TransparenciaAdmin() {
         return institucionalBlocks;
       case 'financeiro':
         return prestacaoContasBlocks;
-      case 'certificacoes':
-        return certificacoesBlocks;
-      case 'projetos':
-        return projetosIncentivadosBlocks;
+      // case 'certificacoes':
+      //   return certificacoesBlocks;
+      // case 'projetos':
+      //   return projetosIncentivadosBlocks;
       case 'uniformes':
         return uniformesBlocks;
       default:
@@ -385,7 +388,7 @@ export default function TransparenciaAdmin() {
             </section>
           )}
 
-          {activeTab === 'certificacoes' && (
+          {/* {activeTab === 'certificacoes' && (
             <section className="space-y-8">
               <div className="text-center mb-8">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">Certificações</h2>
@@ -421,9 +424,9 @@ export default function TransparenciaAdmin() {
                 ))}
               </div>
             </section>
-          )}
+          )} */}
 
-          {activeTab === 'projetos' && (
+          {/* {activeTab === 'projetos' && (
             <section className="space-y-8">
               <div className="text-center mb-8">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">Projetos Incentivados</h2>
@@ -459,7 +462,7 @@ export default function TransparenciaAdmin() {
                 ))}
               </div>
             </section>
-          )}
+          )} */}
 
           {activeTab === 'organograma' && (
             <section className="space-y-8">
