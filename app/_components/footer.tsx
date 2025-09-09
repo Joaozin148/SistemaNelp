@@ -26,7 +26,7 @@ export default function FooterSection() {
           <h3 className="font-bold text-lg mb-4">Páginas</h3>
           <ul className="space-y-3">
             <li className="flex items-center gap-2 text-yellow-400"><span>✺</span><Link href="/" className="text-white hover:underline">Início</Link></li>
-            <li className="flex items-center gap-2 text-yellow-400"><span>✺</span><Link href="/aboutUs" className="text-white hover:underline">Sobre nós</Link></li>
+            <li className="flex items-center gap-2 text-yellow-400"><span>✺</span><Link href="/sobre-nos" className="text-white hover:underline">Sobre nós</Link></li>
             <li className="flex items-center gap-2 text-yellow-400"><span>✺</span><Link href="/projetos" className="text-white hover:underline">Projetos</Link></li>
             <li className="flex items-center gap-2 text-yellow-400"><span>✺</span><Link href="/transparencia" className="text-white hover:underline">Transparência</Link></li>
           </ul>

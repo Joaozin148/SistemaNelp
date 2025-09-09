@@ -3,11 +3,14 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { FileText, Download, Calendar, Building, Award, Users, TrendingUp, Shield, Eye, Crown, DollarSign, ClipboardList, Users2 } from "lucide-react";
+import jsPDF from 'jspdf';
+import html2canvas from 'html2canvas';
 
 export default function TransparenciaAdmin() {
   const [activeTab, setActiveTab] = useState('institucional');
+  const organogramaRef = useRef<HTMLDivElement>(null);
 
   const uniformesBlocks = [
     {
@@ -217,6 +220,50 @@ export default function TransparenciaAdmin() {
         icon: <Shield className="w-5 h-5" />
       }
     ]
+  };
+
+  const downloadOrganogramaPDF = async () => {
+    if (!organogramaRef.current) return;
+
+    try {
+      // Criar canvas do organograma
+      const canvas = await html2canvas(organogramaRef.current, {
+        scale: 2,
+        useCORS: true,
+        allowTaint: true,
+        backgroundColor: '#ffffff'
+      });
+
+      // Criar PDF
+      const imgData = canvas.toDataURL('image/png');
+      const pdf = new jsPDF('p', 'mm', 'a4');
+      
+      // Calcular dimensões para ajustar a imagem ao PDF
+      const imgWidth = 210; // A4 width in mm
+      const pageHeight = 295; // A4 height in mm
+      const imgHeight = (canvas.height * imgWidth) / canvas.width;
+      let heightLeft = imgHeight;
+
+      let position = 0;
+
+      // Adicionar primeira página
+      pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+      heightLeft -= pageHeight;
+
+      // Adicionar páginas adicionais se necessário
+      while (heightLeft >= 0) {
+        position = heightLeft - imgHeight;
+        pdf.addPage();
+        pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+        heightLeft -= pageHeight;
+      }
+
+      // Baixar o PDF
+      pdf.save('organograma-nelp-univolei.pdf');
+    } catch (error) {
+      console.error('Erro ao gerar PDF:', error);
+      alert('Erro ao gerar o PDF. Tente novamente.');
+    }
   };
 
   const tabs = [
@@ -469,9 +516,24 @@ export default function TransparenciaAdmin() {
               <div className="text-center mb-8">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">Estrutura Organizacional</h2>
                 <p className="text-gray-600">Conheça nossa equipe e estrutura de gestão</p>
+                <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg max-w-2xl mx-auto">
+                  <p className="text-blue-800 font-medium">
+                    <span className="font-bold">Importante:</span> A diretoria da NELP UNIVOLEI não recebe remuneração. 
+                    Todos os membros atuam de forma voluntária e dedicada ao desenvolvimento do voleibol.
+                  </p>
+                </div>
+                <div className="mt-6">
+                  <button
+                    onClick={downloadOrganogramaPDF}
+                    className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+                  >
+                    <Download className="w-5 h-5" />
+                    Baixar Organograma em PDF
+                  </button>
+                </div>
               </div>
               
-              <div className="space-y-12">
+              <div ref={organogramaRef} className="space-y-12">
                 {/* Presidência */}
                 <div className="bg-white rounded-2xl shadow-lg p-8">
                   <div className="flex items-center gap-3 mb-6">
