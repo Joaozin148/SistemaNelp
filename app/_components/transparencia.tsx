@@ -27,6 +27,7 @@ export default function TransparenciaAdmin() {
       url: 'https://drive.google.com/file/d/1OcuYfMeCh_oeY9HVaguaWj7WFeQj8eOv/view',
       icon: <FileText className="w-6 h-6" />,
     },
+    
   ];
 
   const institucionalBlocks = [
@@ -40,6 +41,14 @@ export default function TransparenciaAdmin() {
     },
     {
       id: 2,
+      title: 'Estatuto Social Alteração 2025',
+      description: 'Documento fundador que estabelece as regras, objetivos e estrutura organizacional da NELP Univôlei',
+      url: 'https://drive.google.com/file/d/1rHbrS8hppl720FWBsHwP6GqvYLfs-tYM/view',
+      icon: <Building className="w-6 h-6" />,
+      category: 'Governança'
+    },
+    {
+      id: 3,
       title: 'Ata Homologação 2024-2026',
       description: 'Ata de homologação da diretoria eleita para o período 2024-2026',
       url: 'https://drive.google.com/file/d/1be5AbvFbQh-cgof2-m23rNRdSuJu6LZh/view',
@@ -47,7 +56,15 @@ export default function TransparenciaAdmin() {
       category: 'Eleições'
     }, 
     {
-      id: 3,
+      id: 4,
+      title: 'Modelo Parecer Fiscal 2024',
+      description: 'Modelo de parecer fiscal para o ano de 2024',
+      url: 'https://drive.google.com/file/d/1HsRo00oqQ-eJj-i5NR8ZqJuouVGgf13-/view',
+      icon: <TrendingUp className="w-6 h-6" />,
+      category: 'Fiscal'
+    },
+    {
+      id: 5,
       title: 'Modelo Parecer Fiscal 2023',
       description: 'Modelo de parecer fiscal para o ano de 2023',
       url: 'https://drive.google.com/file/d/1HsRo00oqQ-eJj-i5NR8ZqJuouVGgf13-/view',
@@ -55,15 +72,15 @@ export default function TransparenciaAdmin() {
       category: 'Fiscal'
     },
     {
-      id: 4,
+      id: 6,
       title: 'Modelo Parecer Fiscal 2022',
       description: 'Modelo de parecer fiscal para o ano de 2022',
-      url: 'https://drive.google.com/drive/folders/1_DCn_Y1LbXJ467xw_tHJmvNXclG32vyJ',
+      url: 'https://drive.google.com/file/d/1HsRo00oqQ-eJj-i5NR8ZqJuouVGgf13-/view',
       icon: <TrendingUp className="w-6 h-6" />,
       category: 'Fiscal'
     },
     {
-      id: 5,
+      id: 7,
       title: 'Edital Para Eleição',
       description: 'Edital de convocação para eleição da diretoria',
       url: 'https://drive.google.com/file/d/1BLgYbRKIc7gIc27i1rIUqvYwIy25mlvm/view',
@@ -71,7 +88,7 @@ export default function TransparenciaAdmin() {
       category: 'Eleições'
     }, 
     {
-      id: 6,
+      id: 8,
       title: 'Registro de Frêquencia Albertina Salmon',
       description: 'Registro de frequência da participante Albertina Salmon',
       url: 'https://drive.google.com/file/d/1yfvfsxEx9YfWRtFWDEDiBi2x06Z6-oAK/view',
@@ -79,7 +96,7 @@ export default function TransparenciaAdmin() {
       category: 'Frequência'
     }, 
     {
-      id: 7,
+      id: 9,
       title: 'Registro de Frêquencia João Helio Alves',
       description: 'Registro de frequência do participante João Helio Alves',
       url: 'https://drive.google.com/file/d/1xYty7GUskIg1MUKMEyiRRIuV_Yqed-Yv/view',
@@ -102,6 +119,14 @@ export default function TransparenciaAdmin() {
       title: 'Balanço Patrimonial 2023',
       description: 'Demonstração da situação patrimonial',
       url: 'https://drive.google.com/file/d/13DFKAHpcugQMk6J0P9xTb6RCrQIU9TU0/view',
+      icon: <TrendingUp className="w-6 h-6" />,
+      category: 'Financeiro'
+    },
+    {
+      id: 3,
+      title: 'Ata Prestação de Contas 2023-2024',
+      description: 'Prestação de contas 2023-2024',
+      url: 'https://drive.google.com/file/d/1znrPGVEalpFm7i72kaDGbh1cgccqopO5/view',
       icon: <TrendingUp className="w-6 h-6" />,
       category: 'Financeiro'
     },
