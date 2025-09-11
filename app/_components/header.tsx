@@ -46,6 +46,11 @@ const pageContent: SearchResult[] = [
     description: "Ata de homologação da diretoria eleita para o período 2024-2026.",
   },
   {
+    title: "Modelo Parecer Fiscal 2024",
+    url: "https://drive.google.com/file/d/1HsRo00oqQ-eJj-i5NR8ZqJuouVGgf13-/view",
+    description: "Modelo de parecer fiscal para o ano de 2024.",
+  },
+  {
     title: "Modelo Parecer Fiscal 2023",
     url: "https://drive.google.com/file/d/1HsRo00oqQ-eJj-i5NR8ZqJuouVGgf13-/view",
     description: "Modelo de parecer fiscal para o ano de 2023.",
@@ -69,6 +74,16 @@ const pageContent: SearchResult[] = [
     title: "Registro de Frequência João Helio Alves",
     url: "https://drive.google.com/file/d/1xYty7GUskIg1MUKMEyiRRIuV_Yqed-Yv/view",
     description: "Registro de frequência do participante João Helio Alves.",
+  },
+  {
+    title: "Ata Prestação de Contas 2023-2024",
+    url: "https://drive.google.com/file/d/1znrPGVEalpFm7i72kaDGbh1cgccqopO5/view",
+    description: "Prestação de contas 2023-2024",
+  },
+  {
+    title: "Estatuto Social Alteração 2025",
+    url: "https://drive.google.com/file/d/1rHbrS8hppl720FWBsHwP6GqvYLfs-tYM/view",
+    description: "Documento fundador que estabelece as regras, objetivos e estrutura organizacional da NELP Univôlei",
   },
   {
     title: "Contato",

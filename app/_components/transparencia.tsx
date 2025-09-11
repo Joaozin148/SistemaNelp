@@ -130,6 +130,22 @@ export default function TransparenciaAdmin() {
       icon: <TrendingUp className="w-6 h-6" />,
       category: 'Financeiro'
     },
+    {
+      id: 4,
+      title: 'Balanço DRE - 2023',
+      description: 'Demonstração do resultado do exercício 2023',
+      url: 'https://drive.google.com/file/d/18rJB-iYpvg265j4A68DVucScGE4gOxTz/view',
+      icon: <TrendingUp className="w-6 h-6" />,
+      category: 'Financeiro'
+    },
+    {
+      id: 5,
+      title: 'Balanço DRE - 2024',
+      description: 'Demonstração do resultado do exercício 2024',
+      url: 'https://drive.google.com/file/d/1xx49eTGDf92D0krfcVvP4_pJ7QsIC-TZ/view',
+      icon: <TrendingUp className="w-6 h-6" />,
+      category: 'Financeiro'
+    },
     
   ];
 
