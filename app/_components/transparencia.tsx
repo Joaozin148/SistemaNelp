@@ -4,9 +4,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from "react";
-import { FileText, Download, Calendar, Building, Award, Users, TrendingUp, Shield, Eye, Crown, DollarSign, ClipboardList, Users2 } from "lucide-react";
-import jsPDF from 'jspdf';
-import html2canvas from 'html2canvas';
+import { FileText, Download, Calendar, Building, Award, Users, TrendingUp, Shield, Eye, Crown, DollarSign, ClipboardList } from "lucide-react";
 
 export default function TransparenciaAdmin() {
   const [activeTab, setActiveTab] = useState('institucional');
@@ -138,6 +136,7 @@ export default function TransparenciaAdmin() {
       {
        id: 1,
        title: 'Certificado ISO 9001',
+       
        description: 'Certificação de qualidade',
        url: '#',
        icon: <Award className="w-6 h-6" />,
@@ -252,6 +251,10 @@ export default function TransparenciaAdmin() {
     if (!organogramaRef.current) return;
 
     try {
+      // Importar libs apenas no cliente, sob demanda
+      const jsPDFModule = await import('jspdf');
+      const html2canvas = (await import('html2canvas')).default;
+
       // Criar canvas do organograma
       const canvas = await html2canvas(organogramaRef.current, {
         scale: 2,
@@ -262,7 +265,8 @@ export default function TransparenciaAdmin() {
 
       // Criar PDF
       const imgData = canvas.toDataURL('image/png');
-      const pdf = new jsPDF('p', 'mm', 'a4');
+      const PDFClass = (jsPDFModule as any).jsPDF ?? jsPDFModule.default;
+      const pdf = new PDFClass('p', 'mm', 'a4');
       
       // Calcular dimensões para ajustar a imagem ao PDF
       const imgWidth = 210; // A4 width in mm
@@ -297,7 +301,7 @@ export default function TransparenciaAdmin() {
     { id: 'financeiro', label: 'Financeiro', icon: <TrendingUp className="w-5 h-5" /> },
     // { id: 'certificacoes', label: 'Certificações', icon: <Award className="w-5 h-5" /> },
     // { id: 'projetos', label: 'Projetos', icon: <Users className="w-5 h-5" /> },
-    { id: 'organograma', label: 'Organograma', icon: <Users2 className="w-5 h-5" /> },
+    { id: 'organograma', label: 'Organograma', icon: <Users className="w-5 h-5" /> },
     { id: 'uniformes', label: 'Uniformes', icon: <FileText className="w-5 h-5" /> },
   ];
 
