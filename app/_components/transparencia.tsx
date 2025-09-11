@@ -106,24 +106,9 @@ export default function TransparenciaAdmin() {
   ];
 
   const prestacaoContasBlocks = [
+    
     {
       id: 1,
-      title: 'Balanço Patrimonial 2024',
-      description: 'Demonstração da situação patrimonial',
-      url: 'https://drive.google.com/file/d/1K7ZGA9GvQFzHHXLCSzYzebsgyxTvcT29/view',
-      icon: <TrendingUp className="w-6 h-6" />,
-      category: 'Financeiro'
-    },
-    {
-      id: 2,
-      title: 'Balanço Patrimonial 2023',
-      description: 'Demonstração da situação patrimonial',
-      url: 'https://drive.google.com/file/d/13DFKAHpcugQMk6J0P9xTb6RCrQIU9TU0/view',
-      icon: <TrendingUp className="w-6 h-6" />,
-      category: 'Financeiro'
-    },
-    {
-      id: 3,
       title: 'Ata Prestação de Contas 2023-2024',
       description: 'Prestação de contas 2023-2024',
       url: 'https://drive.google.com/file/d/1znrPGVEalpFm7i72kaDGbh1cgccqopO5/view',
@@ -131,7 +116,7 @@ export default function TransparenciaAdmin() {
       category: 'Financeiro'
     },
     {
-      id: 4,
+      id: 2,
       title: 'Balanço DRE - 2023',
       description: 'Demonstração do resultado do exercício 2023',
       url: 'https://drive.google.com/file/d/18rJB-iYpvg265j4A68DVucScGE4gOxTz/view',
@@ -139,7 +124,7 @@ export default function TransparenciaAdmin() {
       category: 'Financeiro'
     },
     {
-      id: 5,
+      id: 3,
       title: 'Balanço DRE - 2024',
       description: 'Demonstração do resultado do exercício 2024',
       url: 'https://drive.google.com/file/d/1xx49eTGDf92D0krfcVvP4_pJ7QsIC-TZ/view',

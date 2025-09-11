@@ -61,6 +61,16 @@ const pageContent: SearchResult[] = [
     description: "Modelo de parecer fiscal para o ano de 2022.",
   },
   {
+    title: "Balanço DRE - 2023",
+    url: "https://drive.google.com/file/d/18rJB-iYpvg265j4A68DVucScGE4gOxTz/view",
+    description: "Demonstração do resultado do exercício 2023.",
+  },
+  {
+    title: "Balanço DRE - 2024",
+    url: "https://drive.google.com/file/d/1xx49eTGDf92D0krfcVvP4_pJ7QsIC-TZ/view",
+    description: "Demonstração do resultado do exercício 2024.",
+  },
+  {
     title: "Edital Para Eleição",
     url: "https://drive.google.com/file/d/1BLgYbRKIc7gIc27i1rIUqvYwIy25mlvm/view",
     description: "Edital de convocação para eleição da diretoria.",
