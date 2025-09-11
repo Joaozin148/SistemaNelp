@@ -7,7 +7,7 @@ import Link from 'next/link';
 export default function HeroSection() {
   return (
     <>
-      <main className="overflow-hidden pt-[76px]">
+      <main className="overflow-hidden pt-[76px] ">
         <section className="relative h-[300px] flex items-center justify-center">
           <Image
             src="/banner.png"

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import VLibrasWidget from "./_components/vlibras";
 import WhatsAppButton from "./_components/whatsapp";
-import AcessibilidadeBar from "./_components/acessibilidade-bar";
+import AccessibilityPanel from "./_components/acessibilidade-bar";
 
 
 export const metadata: Metadata = {
@@ -18,11 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-white">
-        <AcessibilidadeBar />
+        <AccessibilityPanel />
         <VLibrasWidget />
         <WhatsAppButton />
-        {children}
-        
+        <main className="content-container">{children}</main>
       </body>
     </html>
   );

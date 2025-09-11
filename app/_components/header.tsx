@@ -13,6 +13,7 @@ interface SearchResult {
 }
 
 // Simulated content for search (replace with actual content or API call)
+// Simulated content for search
 const pageContent: SearchResult[] = [
   {
     title: "Início",
@@ -35,11 +36,47 @@ const pageContent: SearchResult[] = [
     description: "Relatórios e informações sobre a transparência da organização.",
   },
   {
+    title: "Estatuto Social",
+    url: "https://drive.google.com/file/d/1ezlGXPpgeCZZ_NmwAHpv7H8V5jAynTNa/view",
+    description: "Documento fundador que estabelece as regras, objetivos e estrutura organizacional da NELP Univôlei.",
+  },
+  {
+    title: "Ata Homologação 2024-2026",
+    url: "https://drive.google.com/file/d/1be5AbvFbQh-cgof2-m23rNRdSuJu6LZh/view",
+    description: "Ata de homologação da diretoria eleita para o período 2024-2026.",
+  },
+  {
+    title: "Modelo Parecer Fiscal 2023",
+    url: "https://drive.google.com/file/d/1HsRo00oqQ-eJj-i5NR8ZqJuouVGgf13-/view",
+    description: "Modelo de parecer fiscal para o ano de 2023.",
+  },
+  {
+    title: "Modelo Parecer Fiscal 2022",
+    url: "https://drive.google.com/drive/folders/1_DCn_Y1LbXJ467xw_tHJmvNXclG32vyJ",
+    description: "Modelo de parecer fiscal para o ano de 2022.",
+  },
+  {
+    title: "Edital Para Eleição",
+    url: "https://drive.google.com/file/d/1BLgYbRKIc7gIc27i1rIUqvYwIy25mlvm/view",
+    description: "Edital de convocação para eleição da diretoria.",
+  },
+  {
+    title: "Registro de Frequência Albertina Salmon",
+    url: "https://drive.google.com/file/d/1yfvfsxEx9YfWRtFWDEDiBi2x06Z6-oAK/view",
+    description: "Registro de frequência da participante Albertina Salmon.",
+  },
+  {
+    title: "Registro de Frequência João Helio Alves",
+    url: "https://drive.google.com/file/d/1xYty7GUskIg1MUKMEyiRRIuV_Yqed-Yv/view",
+    description: "Registro de frequência do participante João Helio Alves.",
+  },
+  {
     title: "Contato",
     url: "/#contato",
     description: "Formulário e informações para entrar em contato conosco.",
   },
 ];
+
 
 export function Header() {
   const [searchQuery, setSearchQuery] = useState("");

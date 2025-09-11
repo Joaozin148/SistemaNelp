@@ -2,10 +2,11 @@
 
 import { FaFacebook, FaInstagram, FaWhatsapp, FaRegEnvelope, FaPhoneAlt, FaRegClock, FaMapMarkerAlt } from 'react-icons/fa';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function FooterSection() {
-    const phoneNumber = "5541995109690"; 
-  const message = "Teste Usando o site da NELP!"; 
+  const phoneNumber = "5541995109690";
+  const message = "Teste Usando o site da NELP!";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   return (
     <footer className="bg-[#141312] text-[#fff] pt-16 pb-6 px-4 md:px-0">
@@ -19,7 +20,7 @@ export default function FooterSection() {
               <span className="text-white">Georgia da Cunha Ben</span>
             </div>
           </div>
-          
+
         </div>
         {/* Páginas */}
         <div>
@@ -37,8 +38,8 @@ export default function FooterSection() {
           <ul className="space-y-3">
             <li className="flex items-center gap-3"><FaPhoneAlt className="text-yellow-400" /><span className="text-white">(41) 99510-9690</span></li>
             <li className="flex items-center gap-3"><FaRegEnvelope className="text-yellow-400" /><span className="text-white">nelpunivolei@gmail.com</span></li>
-            <li className="flex items-start gap-3"><FaRegClock className="text-yellow-400 mt-1" /><span className="text-white">Segunda à Sexta<br/>Das 09:00 às 17:00</span></li>
-            <li className="flex items-start gap-3"><FaMapMarkerAlt className="text-yellow-400 mt-1" /><span className="text-white"> R. Cel. Antônio Bittencourt – Ponta do Caju <br/>CEP 83203-130  Paranaguá  PR</span></li>
+            <li className="flex items-start gap-3"><FaRegClock className="text-yellow-400 mt-1" /><span className="text-white">Segunda à Sexta<br />Das 09:00 às 17:00</span></li>
+            <li className="flex items-start gap-3"><FaMapMarkerAlt className="text-yellow-400 mt-1" /><span className="text-white"> R. Cel. Antônio Bittencourt – Ponta do Caju <br />CEP 83203-130  Paranaguá  PR</span></li>
           </ul>
         </div>
         {/* Redes Sociais */}
@@ -51,6 +52,16 @@ export default function FooterSection() {
           </div>
         </div>
       </div>
+
+      <div className="mt-12 border-t border-[#222] pt-6 text-sm grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 items-center justify-items-center">
+        <div>
+          <Image width={200} height={60} alt="Lei" src="/lei2.png" />
+        </div>
+        <div>
+          <Image width={300} height={60} alt="Governo" src="/MEPAssinatura.png" />
+        </div>
+      </div>
+
       <div className="mt-12 border-t border-[#222] pt-6 text-center text-gray-400 text-sm">
         © {new Date().getFullYear()}  NELP UNIVOLEI - Todos os direitos reservados
       </div>
