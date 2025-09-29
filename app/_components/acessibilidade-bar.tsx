@@ -123,15 +123,15 @@ const AcessibilidadeBar = () => {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-start">
+    <div className="fixed top-32 right-6 z-50 flex flex-col items-start">
       {/* Botão flutuante */}
       <button
         aria-label="Abrir opções de acessibilidade"
-        className="bg-yellow-400 hover:bg-yellow-500 text-white rounded-full p-3 shadow-lg focus:outline-none focus:ring-2 focus:ring-yellow-600"
+        className="bg-yellow-400 hover:bg-yellow-500 text-white rounded-full p-4 shadow-lg focus:outline-none focus:ring-2 focus:ring-yellow-600"
         onClick={() => setOpen((o) => !o)}
         style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.18)' }}
       >
-        <FiEye size={24} />
+        <FiEye size={32} />
       </button>
 
       {/* Painel de opções */}
