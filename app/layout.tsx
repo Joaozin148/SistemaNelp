@@ -3,6 +3,7 @@ import "./globals.css";
 import VLibrasWidget from "./_components/vlibras";
 import WhatsAppButton from "./_components/whatsapp";
 import AccessibilityPanel from "./_components/acessibilidade-bar";
+import StructuredData from "./_components/structured-data";
 
 
 export const metadata: Metadata = {
@@ -11,7 +12,14 @@ export const metadata: Metadata = {
     template: "%s | Nelp Univôlei"
   },
   description: "O Nelp Univôlei é uma organização que promove o desenvolvimento social através do esporte, oferecendo oportunidades de crescimento e transformação para jovens e comunidades.",
-  keywords: ["vôlei", "esporte", "desenvolvimento social", "Nelp", "Univôlei", "transformação", "jovens", "comunidade"],
+  keywords: [
+    "NELP", "Nelp", "Nelp Univôlei", "site NELP", "NELP Paranaguá", 
+    "Novo Esporte do Litoral Paranaense", "NELP vôlei", "NELP esporte",
+    "vôlei", "esporte", "desenvolvimento social", "Univôlei", 
+    "transformação", "jovens", "comunidade", "Paranaguá", "litoral paranaense",
+    "projeto social esporte", "vôlei Paranaguá", "esporte social Paranaguá",
+    "NELP projetos", "NELP transparência", "NELP sobre"
+  ],
   authors: [{ name: "Nelp Univôlei" }],
   creator: "Nelp Univôlei",
   publisher: "Nelp Univôlei",
@@ -58,7 +66,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'SEU_GOOGLE_VERIFICATION_CODE', // Substitua pelo código do Google Search Console
+    google: 'Kt62Z4uF_ZajYqyt-rlxE8cde9xZfT_AW0j8pWY', // Código de verificação do Google Search Console
   },
 };
 
@@ -70,6 +78,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className="bg-white">
+        <StructuredData />
         <AccessibilityPanel />
         <VLibrasWidget />
         <WhatsAppButton />

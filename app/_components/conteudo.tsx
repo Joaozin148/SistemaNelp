@@ -2,8 +2,9 @@ import React from 'react';
 
 export default function CompeticoesEmDestaque() {
   return (
-    <section className="bg-cover bg-center text-white" style={{ backgroundImage: "url('/toma.jpg')", backgroundColor: 'rgba(0, 0, 0, 0.6)', backgroundPosition: 'center 40%', }}>
-      <div className="bg-black bg-opacity-60 py-28 px-4 md:px-24">
+    <section className="relative bg-cover bg-center text-white" style={{ backgroundImage: "url('/toma.jpg')", backgroundPosition: 'center 40%', }}>
+      <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+      <div className="relative z-10 bg-black bg-opacity-40 py-28 px-4 md:px-24">
         <div className="container mx-auto">
           <div className="mb-8">
             <h2 className="text-lg uppercase tracking-widest font-light text-yellow-400">Competições em destaque</h2>
