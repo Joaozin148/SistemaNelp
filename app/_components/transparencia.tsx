@@ -30,6 +30,14 @@ export default function TransparenciaAdmin() {
 
   const institucionalBlocks = [
     {
+      id: 9,
+      title: 'Edital de Licitação',
+      description: 'Publicação do jornal Bem Paraná contendo diversos avisos de licitação e comunicados de órgãos municipais e estaduais (edição de 12/11/2025).',
+      url: 'https://drive.google.com/file/d/1BC7agSn3ollNqjtR04P4FkOEeZKNC5uK/view',
+      icon: <FileText className="w-6 h-6" />,
+      category: 'Licitação'
+    }, 
+    {
       id: 1,
       title: 'Estatuto Social',
       description: 'Documento fundador que estabelece as regras, objetivos e estrutura organizacional da NELP Univôlei',
@@ -101,14 +109,7 @@ export default function TransparenciaAdmin() {
       icon: <Users className="w-6 h-6" />,
       category: 'Frequência'
     }, 
-    {
-      id: 9,
-      title: 'Edital de Licitação',
-      description: 'Publicação do jornal Bem Paraná contendo diversos avisos de licitação e comunicados de órgãos municipais e estaduais (edição de 12/11/2025).',
-      url: 'https://drive.google.com/file/d/1BC7agSn3ollNqjtR04P4FkOEeZKNC5uK/view',
-      icon: <FileText className="w-6 h-6" />,
-      category: 'Licitação'
-    }, 
+
   ];
 
   const prestacaoContasBlocks = [
