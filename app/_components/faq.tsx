@@ -11,6 +11,11 @@ export default function FAQsFour() {
             answer: 'Basta entrar em contato pelo formulário acima ou pelas nossas redes sociais. Nossa equipe irá te orientar sobre os próximos passos!',
         },
         {
+            id: 'item-1b',
+            question: 'A partir de qual idade posso começar a treinar?',
+            answer: 'Você pode começar a treinar a partir dos 9 anos até os 17 anos. Temos turmas organizadas por faixa etária para melhor aproveitamento de todos.',
+        },
+        {
             id: 'item-2',
             question: 'Quais são os horários dos treinos?',
             answer: `
