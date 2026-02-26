@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function FooterSection() {
   const phoneNumber = "554195738636";
-  const message = "Teste Usando o site da NELP!";
+  const message = "Olá! Vim pelo site e gostaria de mais informações sobre o NELP Univôlei.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   return (
     <footer className="bg-[#141312] text-[#fff] pt-16 pb-6 px-4 md:px-0">
