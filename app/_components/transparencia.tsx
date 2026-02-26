@@ -200,15 +200,15 @@ export default function TransparenciaAdmin() {
   const organogramaData = {
     presidencia: [
       {
-        name: 'Geórgia da Cunha Ben',
+        name: 'Josemara Bernardo Capeti',
         role: 'Presidente',
         avatar: '/avatar_fem.png',
         icon: <Crown className="w-5 h-5" />
       },
       {
-        name: 'Selma de Oliveira de Souza Gonçalves',
+        name: 'João Severino',
         role: 'Vice Presidente',
-        avatar: '/avatar_fem.png',
+        avatar: '/avatar_masc.png',
         icon: <Crown className="w-5 h-5" />
       }
     ],
@@ -220,37 +220,61 @@ export default function TransparenciaAdmin() {
         icon: <DollarSign className="w-5 h-5" />
       },
       {
-        name: 'Simone do Pilar Cardozo',
-        role: 'Vice Tesoureira',
-        avatar: '/avatar_fem.png',
+        name: 'Charles Mathias Renner',
+        role: 'Vice Tesoureiro',
+        avatar: '/avatar_masc.png',
         icon: <DollarSign className="w-5 h-5" />
       }
     ],
     secretaria: [
       {
-        name: 'Scheila Nunes dos Santos',
-        role: '1º Secretária',
+        name: 'Gismara Wingert Renner',
+        role: '1ª Secretária',
         avatar: '/avatar_fem.png',
         icon: <ClipboardList className="w-5 h-5" />
       },
       {
-        name: 'Adrielle Cristina Geraldo Coelho',
-        role: '2º Secretária',
-        avatar: '/avatar_fem.png',
+        name: 'Ewerson Luis Capeti',
+        role: '2º Secretário',
+        avatar: '/avatar_masc.png',
         icon: <ClipboardList className="w-5 h-5" />
       }
     ],
     conselhoFiscal: [
       {
-        name: 'Adriano Correa Pires',
-        role: 'Conselho Fiscal',
+        name: 'Rodrigo Rodrigues da Silva',
+        role: 'Fiscal',
         avatar: '/avatar_masc.png',
         icon: <Shield className="w-5 h-5" />
       },
       {
-        name: 'Josemara Bernardo Capeti',
-        role: 'Conselho Fiscal',
+        name: 'Marcia Nascimento Crissante',
+        role: 'Fiscal',
         avatar: '/avatar_fem.png',
+        icon: <Shield className="w-5 h-5" />
+      },
+      {
+        name: 'Keller Maria Franco Ferraro',
+        role: 'Fiscal',
+        avatar: '/avatar_fem.png',
+        icon: <Shield className="w-5 h-5" />
+      },
+      {
+        name: 'Alex Sandra Bento Picinim',
+        role: 'Suplente',
+        avatar: '/avatar_fem.png',
+        icon: <Shield className="w-5 h-5" />
+      },
+      {
+        name: 'Fernanda Munhão dos Santos',
+        role: 'Suplente',
+        avatar: '/avatar_fem.png',
+        icon: <Shield className="w-5 h-5" />
+      },
+      {
+        name: 'Eugênio da Silva Lima',
+        role: 'Suplente',
+        avatar: '/avatar_masc.png',
         icon: <Shield className="w-5 h-5" />
       }
     ]

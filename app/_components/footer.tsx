@@ -17,7 +17,7 @@ export default function FooterSection() {
             <h3 className="font-bold text-lg mb-2">Presidente</h3>
             <div className="flex items-start gap-2 text-yellow-400">
               <span className="mt-1">✺</span>
-              <span className="text-white">Georgia da Cunha Ben</span>
+              <span className="text-white">Josemara Bernardo Capeti</span>
             </div>
           </div>
 
