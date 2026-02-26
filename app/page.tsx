@@ -28,7 +28,7 @@ export default function Home() {
       <Contact2 
         title="Fale Conosco"
         description="Estamos disponíveis para dúvidas, sugestões ou oportunidades de parceria. Conte com a gente!"
-        phone="(41) 99510-9690"
+        phone="(41) 9573-8636"
         email="nelpunivolei@gmail.com"
       />
       <Faq />

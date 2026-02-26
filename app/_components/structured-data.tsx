@@ -20,7 +20,7 @@ export default function StructuredData() {
       },
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+55-41-99510-9690",
+        "telephone": "+55-41-9573-8636",
         "contactType": "customer service",
         "email": "nelpunivolei@gmail.com"
       },

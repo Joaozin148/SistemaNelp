@@ -19,24 +19,18 @@ export default function FAQsFour() {
             id: 'item-2',
             question: 'Quais são os horários dos treinos?',
             answer: `
-Arena Albertina – Manhã:
-- 9h30: 14 a 16 anos
-- 10h30: 13 anos ou menos
+Ginásio Albertina – Terça e Quinta:
+- 8h30: nascidos em 2009 e 2010
+- 9h30: nascidos em 2011, 2012 e 2013
+- 10h30: nascidos em 2014, 2015, 2016 e 2017
+- 13h30: masculino – nascidos de 2010 a 2017
+- 14h30: nascidos em 2009 e 2010
+- 15h30: nascidos em 2011, 2012 e 2013
+- 16h30: nascidos em 2014, 2015, 2016 e 2017
 
-Arena Albertina – Tarde:
-- 13h30 às 14h30: 15 e 14 anos
-- 14h30 às 15h30: 13 e 12 anos
-- 15h30 às 16h30: 11 anos ou menos
-- 16h30 às 17h30: Intermediário (14 anos masculino)
-
-Jardim Esperança – Hélio Alves (Terças e Quintas):
-- 15h30 às 16h45: 11 a 14 anos
-- 16h45 às 18h: 15 a 17 anos
-*Início: 14 de abril*
-
-Times de rendimento (Segundas, Quartas e Sextas):
-- Manhã: 9h às 10h30
-- Tarde: 13h30 às 19h
+Ginásio Hélio Alves – Terça:
+- 9h30 às 11h: nascidos de 2009 a 2017
+- 15h30 às 17h: nascidos de 2009 a 2017
             `.trim().replace(/\n/g, '<br />'),
         },
         {
