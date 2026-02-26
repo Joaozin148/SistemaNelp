@@ -30,13 +30,29 @@ export default function TransparenciaAdmin() {
 
   const institucionalBlocks = [
     {
+      id: 12,
+      title: 'Estatuto Social 2026',
+      description: 'Estatuto social atualizado para o ano de 2026 da NELP Univôlei',
+      url: 'https://drive.google.com/file/d/1bLuFqaAzLeFibz_nUD6GKLUF8v0yB3j-/view',
+      icon: <Building className="w-6 h-6" />,
+      category: 'Governança'
+    },
+    {
+      id: 11,
+      title: 'Regime Interno',
+      description: 'Regimento interno que disciplina o funcionamento e as normas internas da NELP Univôlei',
+      url: 'https://drive.google.com/file/d/1Zwu6VbbxYTNL7K-Cw6ljbQQOork34uro/view',
+      icon: <FileText className="w-6 h-6" />,
+      category: 'Governança'
+    },
+    {
       id: 9,
       title: 'Edital de Licitação',
       description: 'Publicação do jornal Bem Paraná contendo diversos avisos de licitação e comunicados de órgãos municipais e estaduais (edição de 12/11/2025).',
       url: 'https://drive.google.com/file/d/1BC7agSn3ollNqjtR04P4FkOEeZKNC5uK/view',
       icon: <FileText className="w-6 h-6" />,
       category: 'Licitação'
-    }, 
+    },
     {
       id: 1,
       title: 'Estatuto Social',
@@ -60,7 +76,7 @@ export default function TransparenciaAdmin() {
       url: 'https://drive.google.com/file/d/1be5AbvFbQh-cgof2-m23rNRdSuJu6LZh/view',
       icon: <FileText className="w-6 h-6" />,
       category: 'Eleições'
-    }, 
+    },
     {
       id: 4,
       title: 'Modelo Parecer Fiscal 2024',
@@ -92,7 +108,7 @@ export default function TransparenciaAdmin() {
       url: 'https://drive.google.com/file/d/1BLgYbRKIc7gIc27i1rIUqvYwIy25mlvm/view',
       icon: <Calendar className="w-6 h-6" />,
       category: 'Eleições'
-    }, 
+    },
     {
       id: 8,
       title: 'Registro de Frêquencia Albertina Salmon',
@@ -100,7 +116,7 @@ export default function TransparenciaAdmin() {
       url: 'https://drive.google.com/file/d/1yfvfsxEx9YfWRtFWDEDiBi2x06Z6-oAK/view',
       icon: <Users className="w-6 h-6" />,
       category: 'Frequência'
-    }, 
+    },
     {
       id: 9,
       title: 'Registro de Frêquencia João Helio Alves',
@@ -108,8 +124,7 @@ export default function TransparenciaAdmin() {
       url: 'https://drive.google.com/file/d/1xYty7GUskIg1MUKMEyiRRIuV_Yqed-Yv/view',
       icon: <Users className="w-6 h-6" />,
       category: 'Frequência'
-    }, 
-
+    },
   ];
 
   const prestacaoContasBlocks = [
