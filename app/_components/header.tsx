@@ -95,6 +95,43 @@ const pageContent: SearchResult[] = [
     url: "https://drive.google.com/file/d/1rHbrS8hppl720FWBsHwP6GqvYLfs-tYM/view",
     description: "Documento fundador que estabelece as regras, objetivos e estrutura organizacional da NELP Univôlei",
   },
+  // Entradas relacionadas ao FAQ
+  {
+    title: "Como posso participar do projeto?",
+    url: "/#faq",
+    description:
+      "Basta entrar em contato pelo formulário ou pelas redes sociais do NELP Univôlei. Nossa equipe orienta sobre inscrição, vagas e próximos passos para participar do projeto.",
+  },
+  {
+    title: "A partir de qual idade posso começar a treinar?",
+    url: "/#faq",
+    description:
+      "Você pode começar a treinar a partir dos 9 anos até os 17 anos. Pesquise por idade ou 'com quantos anos posso treinar' para ver esta informação nas Perguntas Frequentes.",
+  },
+  {
+    title: "Quais são os horários dos treinos?",
+    url: "/#faq",
+    description:
+      "Os treinos acontecem em diferentes horários de manhã e à tarde, com turmas organizadas por faixa etária em locais como a Arena Albertina e o Jardim Esperança.",
+  },
+  {
+    title: "Preciso ter experiência para participar?",
+    url: "/#faq",
+    description:
+      "Não é necessário ter experiência. O projeto recebe iniciantes e atletas experientes, com turmas para todos os níveis de habilidade.",
+  },
+  {
+    title: "Onde acontecem os treinos?",
+    url: "/#faq",
+    description:
+      "Os treinos acontecem principalmente no Ginásio Albertina Salmon, em Paranaguá-PR, além de outros polos informados pela equipe.",
+  },
+  {
+    title: "Como posso apoiar o projeto?",
+    url: "/#faq",
+    description:
+      "Você pode apoiar sendo voluntário, patrocinador ou ajudando a divulgar o trabalho do NELP Univôlei. Entre em contato para saber como contribuir.",
+  },
   {
     title: "Contato",
     url: "/#contato",

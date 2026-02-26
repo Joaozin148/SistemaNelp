@@ -57,7 +57,7 @@ Times de rendimento (Segundas, Quartas e Sextas):
     ]
 
     return (
-        <section className="py-16 md:py-24 bg-gradient-to-r from-yellow-200 via-yellow-100 to-blue-100/60">
+        <section id="faq" className="py-16 md:py-24 bg-gradient-to-r from-yellow-200 via-yellow-100 to-blue-100/60">
             <div className="mx-auto max-w-3xl px-4 md:px-6">
                 <div className="mx-auto max-w-2xl text-center mb-10">
                     <div className="flex items-center justify-center gap-3 mb-2">
