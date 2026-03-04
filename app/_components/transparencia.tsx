@@ -78,6 +78,14 @@ export default function TransparenciaAdmin() {
       category: 'Eleições'
     },
     {
+      id: 13,
+      title: 'Ata da Nova Eleição',
+      description: 'Ata da nova eleição da diretoria, em razão da mudança da direção da NELP Univôlei',
+      url: 'https://drive.google.com/file/d/1hbaTPdwrhIWmVHtPSJG0M9EMaDOoDL6D/view',
+      icon: <ClipboardList className="w-6 h-6" />,
+      category: 'Eleições'
+    },
+    {
       id: 4,
       title: 'Modelo Parecer Fiscal 2024',
       description: 'Modelo de parecer fiscal para o ano de 2024',
