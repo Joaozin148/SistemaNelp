@@ -151,6 +151,49 @@ const pageContent: SearchResult[] = [
     url: "https://drive.google.com/file/d/17MgJkiGkBkTzuQlLBtUC7ib04WmMehmT/view",
     description: "Parecer do Conselho Fiscal 2024. Parecer fiscal, aprovação de contas, análise de contas, parecer sobre demonstrações financeiras, parecer técnico conselho fiscal, relatório conselho fiscal.",
   },
+  // Documentos de Uniformes - Portal de Transparência
+  {
+    title: "Uniforme Branco 2023-2024",
+    url: "https://drive.google.com/file/d/1mN_DNS01QSI-oJGOmuFgljufhRO8EAdF/view",
+    description: "Uniforme branco 2023-2024. Uniforme oficial, uniforme branco, uniforme de jogo, camisa branca, uniforme em casa, material esportivo, vestuário de jogo.",
+  },
+  {
+    title: "Uniforme Preto 2023-2024",
+    url: "https://drive.google.com/file/d/1OcuYfMeCh_oeY9HVaguaWj7WFeQj8eOv/view",
+    description: "Uniforme preto 2023-2024. Uniforme oficial, uniforme preto, uniforme de jogo, camisa preta, uniforme fora de casa, material esportivo, vestuário de jogo.",
+  },
+  // Certificações
+  {
+    title: "Certificado ISO 9001",
+    url: "#",
+    description: "Certificado ISO 9001. Certificação de qualidade, certificação ISO, gestão da qualidade, reconhecimento de qualidade, selo de qualidade.",
+  },
+  {
+    title: "Certificado de Sustentabilidade",
+    url: "#",
+    description: "Certificado de Sustentabilidade. Sustentabilidade, responsabilidade ambiental, práticas sustentáveis, certificação ambiental, reconhecimento sustentável.",
+  },
+  {
+    title: "Certificado de Qualidade 2022",
+    url: "#",
+    description: "Certificado de Qualidade 2022. Qualidade, reconhecimento de qualidade, premiação, selo de qualidade, certificação 2022.",
+  },
+  // Projetos Incentivados
+  {
+    title: "Projeto Cultural 2022",
+    url: "#",
+    description: "Projeto Cultural 2022. Projeto cultural, atividades culturais, eventos culturais, incentivo à cultura, projeto incentivado, ações culturais 2022.",
+  },
+  {
+    title: "Projeto Esportivo Infantil",
+    url: "#",
+    description: "Projeto Esportivo Infantil. Projeto esportivo para crianças, esporte infantil, voleibol infantil, iniciação esportiva, projeto social para crianças.",
+  },
+  {
+    title: "Iniciativa de Educação 2022",
+    url: "#",
+    description: "Iniciativa de Educação 2022. Projeto educacional, programas educacionais, atividades educativas, educação pelo esporte, formação cidadã.",
+  },
   // Entradas relacionadas ao FAQ
   {
     title: "Como posso participar do projeto?",
