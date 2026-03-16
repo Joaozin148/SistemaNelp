@@ -133,10 +133,41 @@ export default function TransparenciaAdmin() {
       icon: <Users className="w-6 h-6" />,
       category: 'Frequência'
     },
+    {
+      id: 14,
+      title: 'Relatório de Atividades 2023',
+      description: 'Relatório das atividades desenvolvidas pela NELP Univôlei no ano de 2023',
+      url: 'https://drive.google.com/drive/folders/1_DCn_Y1LbXJ467xw_tHJmvNXclG32vyJ?hl=pt-br',
+      icon: <FileText className="w-6 h-6" />,
+      category: 'Atividades'
+    },
+    {
+      id: 15,
+      title: 'Relatório de Atividades 2024',
+      description: 'Relatório das atividades desenvolvidas pela NELP Univôlei no ano de 2024',
+      url: 'https://drive.google.com/file/d/1iTPvsu53roorHaf0vPtGb1TfXNu4QhuJ/view',
+      icon: <FileText className="w-6 h-6" />,
+      category: 'Atividades'
+    },
+    {
+      id: 16,
+      title: 'Relatório de Atividades 2025',
+      description: 'Relatório das atividades desenvolvidas pela NELP Univôlei no ano de 2025',
+      url: 'https://drive.google.com/file/d/19Ofiaha8vLrPqMMIz33qQoDKcBe0k32j/view',
+      icon: <FileText className="w-6 h-6" />,
+      category: 'Atividades'
+    },
+    {
+      id: 17,
+      title: 'Parecer Conselho Fiscal 2024',
+      description: 'Parecer do Conselho Fiscal referente ao exercício de 2024',
+      url: 'https://drive.google.com/file/d/17MgJkiGkBkTzuQlLBtUC7ib04WmMehmT/view',
+      icon: <Shield className="w-6 h-6" />,
+      category: 'Conselho Fiscal'
+    },
   ];
 
   const prestacaoContasBlocks = [
-    
     {
       id: 1,
       title: 'Ata Prestação de Contas 2023-2024',
@@ -161,7 +192,46 @@ export default function TransparenciaAdmin() {
       icon: <TrendingUp className="w-6 h-6" />,
       category: 'Financeiro'
     },
-    
+    {
+      id: 4,
+      title: 'Relatório Financeiro 2023',
+      description: 'Relatório financeiro detalhado do exercício 2023',
+      url: 'https://drive.google.com/file/d/1y6UcjyY91DWbcuQPdXVoYT67dhG_avyS/view',
+      icon: <TrendingUp className="w-6 h-6" />,
+      category: 'Financeiro'
+    },
+    {
+      id: 5,
+      title: 'Relatório Financeiro 2024',
+      description: 'Relatório financeiro detalhado do exercício 2024',
+      url: 'https://drive.google.com/file/d/1Wm5vej4qCTlgeRPd81WnrmIUSWfZlU_E/view',
+      icon: <TrendingUp className="w-6 h-6" />,
+      category: 'Financeiro'
+    },
+    {
+      id: 6,
+      title: 'Relatório Financeiro 2025',
+      description: 'Relatório financeiro detalhado do exercício 2025',
+      url: 'https://drive.google.com/file/d/1FJLv7kAhSie2_exmUhamVRdNt5uABUQL/view',
+      icon: <TrendingUp className="w-6 h-6" />,
+      category: 'Financeiro'
+    },
+    {
+      id: 7,
+      title: 'Demonstrativo Financeiro 2023',
+      description: 'Demonstrativo financeiro detalhado do exercício 2023',
+      url: 'https://drive.google.com/file/d/1Otag9TZazKvLjsI7N766JhoPVxWVVsrQ/view',
+      icon: <TrendingUp className="w-6 h-6" />,
+      category: 'Financeiro'
+    },
+    {
+      id: 8,
+      title: 'Demonstrativo Financeiro 2024',
+      description: 'Demonstrativo financeiro detalhado do exercício 2024',
+      url: 'https://drive.google.com/file/d/1Y0AB87DDxIZ8R8Cu-5kRdZOptz70qAR-/view',
+      icon: <TrendingUp className="w-6 h-6" />,
+      category: 'Financeiro'
+    },
   ];
 
      const certificacoesBlocks = [
