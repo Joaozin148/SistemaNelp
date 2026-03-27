@@ -89,7 +89,7 @@ export default function TransparenciaAdmin() {
       id: 4,
       title: 'Modelo Parecer Fiscal 2024',
       description: 'Modelo de parecer fiscal para o ano de 2024',
-      url: 'https://drive.google.com/file/d/1HsRo00oqQ-eJj-i5NR8ZqJuouVGgf13-/view',
+      url: 'https://drive.google.com/file/d/1W4TpFxGaA3SynU7DDH9FKo3JSyIkT2EF/view',
       icon: <TrendingUp className="w-6 h-6" />,
       category: 'Fiscal'
     },
@@ -97,7 +97,7 @@ export default function TransparenciaAdmin() {
       id: 5,
       title: 'Modelo Parecer Fiscal 2023',
       description: 'Modelo de parecer fiscal para o ano de 2023',
-      url: 'https://drive.google.com/file/d/1HsRo00oqQ-eJj-i5NR8ZqJuouVGgf13-/view',
+      url: 'https://drive.google.com/file/d/1YRo9gDvW7qgg0guJ8NFw4swwAlfhu6pb/view',
       icon: <TrendingUp className="w-6 h-6" />,
       category: 'Fiscal'
     },
