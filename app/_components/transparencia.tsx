@@ -86,6 +86,14 @@ export default function TransparenciaAdmin() {
       category: 'Eleições'
     },
     {
+      id: 18,
+      title: 'Documento de Ata 2026-2030',
+      description: 'Ata referente à diretoria eleita ou homologada para o período 2026-2030',
+      url: 'https://drive.google.com/file/d/1Wc1WCfNSxIqBVYSYsR3Oj_RDtV4gcnpU/view',
+      icon: <ClipboardList className="w-6 h-6" />,
+      category: 'Eleições'
+    },
+    {
       id: 4,
       title: 'Modelo Parecer Fiscal 2024',
       description: 'Modelo de parecer fiscal para o ano de 2024',
