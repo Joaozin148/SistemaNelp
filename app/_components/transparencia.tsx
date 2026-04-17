@@ -300,6 +300,14 @@ export default function TransparenciaAdmin() {
 
   // Dados do organograma
   const organogramaData = {
+    assembleiaGeral: [
+      {
+        name: 'Assembleia Geral',
+        role: 'Órgão máximo deliberativo',
+        avatar: '/avatar_masc.png',
+        icon: <Users className="w-5 h-5" />
+      }
+    ],
     presidencia: [
       {
         name: 'Josemara Bernardo Capeti',
@@ -323,7 +331,7 @@ export default function TransparenciaAdmin() {
       },
       {
         name: 'Charles Mathias Renner',
-        role: 'Vice Tesoureiro',
+        role: 'Vice-Tesoureiro',
         avatar: '/avatar_masc.png',
         icon: <DollarSign className="w-5 h-5" />
       }
@@ -683,8 +691,7 @@ export default function TransparenciaAdmin() {
                 <p className="text-gray-600">Conheça nossa equipe e estrutura de gestão</p>
                 <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg max-w-2xl mx-auto">
                   <p className="text-blue-800 font-medium">
-                    <span className="font-bold">Importante:</span> A diretoria da NELP UNIVOLEI não recebe remuneração. 
-                    Todos os membros atuam de forma voluntária e dedicada ao desenvolvimento do voleibol.
+                    <span className="font-bold">Importante:</span> Nenhum membro e dirigente da NELP UNIVOLEI é remunerado com recursos públicos.
                   </p>
                 </div>
                 <div className="mt-6">
@@ -699,6 +706,39 @@ export default function TransparenciaAdmin() {
               </div>
               
               <div ref={organogramaRef} className="space-y-12">
+                {/* Assembleia Geral */}
+                <div className="bg-white rounded-2xl shadow-lg p-8">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="bg-gradient-to-r from-gray-600 to-gray-700 rounded-xl p-3">
+                      <Users className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900">Assembleia Geral</h3>
+                  </div>
+                  <div className="grid grid-cols-1 gap-6">
+                    {organogramaData.assembleiaGeral.map((member, index) => (
+                      <div
+                        key={index}
+                        className="flex items-center gap-4 p-4 bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl border border-gray-200"
+                      >
+                        <div className="relative">
+                          <img
+                            className="w-16 h-16 rounded-full object-cover border-4 border-white shadow-lg"
+                            src={member.avatar}
+                            alt={member.name}
+                          />
+                          <div className="absolute -bottom-1 -right-1 bg-gray-600 rounded-full p-1">
+                            {member.icon}
+                          </div>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-gray-900">{member.name}</h4>
+                          <p className="text-gray-700 font-medium">{member.role}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
                 {/* Presidência */}
                 <div className="bg-white rounded-2xl shadow-lg p-8">
                   <div className="flex items-center gap-3 mb-6">
