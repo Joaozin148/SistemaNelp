@@ -3,7 +3,7 @@
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function WhatsAppButton() {
-  const phoneNumber = "554195738636"; 
+  const phoneNumber = "5541997638128"; 
   const message = "Olá! Vim pelo site e gostaria de mais informações sobre o NELP Univôlei."; 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 

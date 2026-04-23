@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function FooterSection() {
-  const phoneNumber = "554195738636";
+  const phoneNumber = "5541997638128";
   const message = "Olá! Vim pelo site e gostaria de mais informações sobre o NELP Univôlei.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   return (
