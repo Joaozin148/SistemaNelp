@@ -213,7 +213,7 @@ export default function TransparenciaAdmin() {
       id: 5,
       title: 'Relatório Financeiro 2024',
       description: 'Relatório financeiro detalhado do exercício 2024',
-      url: 'https://drive.google.com/file/d/1Wm5vej4qCTlgeRPd81WnrmIUSWfZlU_E/view',
+      url: 'https://drive.google.com/file/d/1l5VXB0bcCVgmcLrjXKyTTuxPCck6FWct/view',
       icon: <TrendingUp className="w-6 h-6" />,
       category: 'Financeiro'
     },
