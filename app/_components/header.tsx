@@ -88,7 +88,7 @@ const pageContent: SearchResult[] = [
   },
   {
     title: "Certidão de Registro Cadastral",
-    url: "#",
+    url: "/transparencia/certidao-registro-cadastral.html",
     description:
       "Certidão de registro cadastral NELP Univôlei. CRC, certidão cadastral, situação cadastral, Receita Federal, comprovante cadastral, licitação, cadastro fornecedor, regularidade fiscal, transparência.",
   },

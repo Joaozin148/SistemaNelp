@@ -64,8 +64,8 @@ export default function TransparenciaAdmin() {
     {
       id: 19,
       title: 'Certidão de Registro Cadastral',
-      description: 'Certidão de situação cadastral perante a Receita Federal (documento fornecido em HTML).',
-      url: 'https://drive.google.com/file/d/1B2HJWx5YR18kSj1raYmVZ5sbzdBibrAl/view?usp=sharing',
+      description: 'Certidão de situação cadastral perante a Receita Federal.',
+      url: '/transparencia/certidao-registro-cadastral.html',
       icon: <FileText className="w-6 h-6" />,
       category: 'Licitação'
     },
