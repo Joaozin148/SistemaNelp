@@ -87,6 +87,12 @@ const pageContent: SearchResult[] = [
     description: "Edital para eleição da diretoria. Edital, edital eleição, convocação assembleia, aviso de eleição, edital diretoria, edital conselho.",
   },
   {
+    title: "Certidão de Registro Cadastral",
+    url: "#",
+    description:
+      "Certidão de registro cadastral NELP Univôlei. CRC, certidão cadastral, situação cadastral, Receita Federal, comprovante cadastral, licitação, cadastro fornecedor, regularidade fiscal, transparência.",
+  },
+  {
     title: "Registro de Frequência Albertina Salmon",
     url: "https://drive.google.com/file/d/1yfvfsxEx9YfWRtFWDEDiBi2x06Z6-oAK/view",
     description: "Registro de frequência Albertina Salmon. Lista de presença, registro de presença, controle de frequência, participantes, presença em atividades.",

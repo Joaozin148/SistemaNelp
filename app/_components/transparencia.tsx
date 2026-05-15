@@ -62,6 +62,14 @@ export default function TransparenciaAdmin() {
       category: 'Licitação'
     },
     {
+      id: 19,
+      title: 'Certidão de Registro Cadastral',
+      description: 'Certidão de situação cadastral perante a Receita Federal (documento fornecido em HTML).',
+      url: 'https://drive.google.com/file/d/1B2HJWx5YR18kSj1raYmVZ5sbzdBibrAl/view?usp=sharing',
+      icon: <FileText className="w-6 h-6" />,
+      category: 'Licitação'
+    },
+    {
       id: 1,
       title: 'Estatuto Social',
       description: 'Documento fundador que estabelece as regras, objetivos e estrutura organizacional da NELP Univôlei',
