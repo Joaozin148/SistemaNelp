@@ -84,16 +84,16 @@ const Component = forwardRef<HTMLElement>((props, ref) => {
             <div className='sticky top-0 h-screen w-full col-span-4 gap-2  grid grid-rows-3'>
               <figure className='w-full h-full '>
                 <img
-                  src='/time.jpeg'
+                  src='/time_atualizado.jpg'
                   alt=''
                   className='transition-all duration-300 h-full w-full  align-bottom object-cover rounded-md '
                 />
               </figure>
-              <figure className='w-full h-full '>
+              <figure className='w-full h-auto '>
                 <img
-                  src='/diretoria.jpg'
+                  src='/diretoria2.jpg'
                   alt=''
-                  className='transition-all duration-300 h-full w-full align-bottom object-cover rounded-md '
+                  className='transition-all duration-300 w-full h-auto min-h-[280px] sm:min-h-[320px] object-cover rounded-md '
                 />
               </figure>
               <figure className='w-full h-full '>
@@ -107,7 +107,7 @@ const Component = forwardRef<HTMLElement>((props, ref) => {
             <div className='grid gap-2 col-span-4'>
               <figure className='w-full'>
                 <img
-                  src='/time2.jpeg'
+                  src='/diretoria.jpg'
                   alt=''
                   className='transition-all duration-300 w-full h-96  align-bottom object-cover rounded-md '
                 />
