@@ -11,6 +11,28 @@ export default function TransparenciaAdmin() {
   const organogramaRef = useRef<HTMLDivElement>(null);
 
   const uniformesBlocks = [
+    { 
+      id: 3,
+      title: 'Uniforme Azul 2025-2026',
+      description: 'Uniforme oficial para treinos e atividades internas',
+      url: 'https://drive.google.com/file/d/1p_alW0JoC8V9RPvf423UnYLDx7kGPAW1/view',
+      icon: <FileText className="w-6 h-6" />,
+    },
+    { 
+      id: 4,
+      title: 'Uniforme Cinza 2025-2026',
+      description: 'Uniforme oficial para treinos e atividades internas',
+      url: 'https://drive.google.com/file/d/1JG8tCXznuBOLDJocE_vlHYhF9cZvtqUR/view',
+      icon: <FileText className="w-6 h-6" />,
+    },
+    {
+      id: 5,  
+      title: 'Agasalho Nelp 2025-2026',
+      description: 'Agasalho oficial para uso em dias frios e eventos externos',
+      url: 'https://drive.google.com/file/d/1dds5FUOZKyH74NqKpmKmcQ3VVlOhGUth/view',
+      icon: <FileText className="w-6 h-6" />,
+
+    },
     {
       id: 1,
       title: 'Uniforme Branco 2023-2024',
@@ -26,6 +48,7 @@ export default function TransparenciaAdmin() {
       icon: <FileText className="w-6 h-6" />,
     },
     
+
   ];
 
   const institucionalBlocks = [
