@@ -69,7 +69,7 @@ const projetos: Projeto[] = [
   },
   {
     id: 3,
-    nome: 'Jogos da Juventude Paraná',
+    nome: 'Jogos da Juventude Paraná 2026',
     status: 'Concluído',
     descricao: 'Competições do Jogos da Juventude no Paraná, com categorias masculino e feminino representando a NELP.',
     imagens: [
