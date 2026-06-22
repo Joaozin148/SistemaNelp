@@ -35,6 +35,23 @@ const projetos: Projeto[] = [
   },
   {
     id: 2,
+    nome: 'Jogos da Juventude Paraná 2026',
+    status: 'Concluído',
+    descricao: 'Competições do Jogos da Juventude no Paraná, com categorias masculino e feminino representando a NELP.',
+    imagens: [
+      '/juventude2026_1.jpg',
+      '/juventude2026_2.jpg',
+      '/juventude2026_3.jpg',
+      '/juventude2026_4.jpg',
+      '/juventude2026_5.jpg',
+      '/juventude2026_7.jpg', 
+      
+      
+    ],
+    descricaoLonga: 'A participação nos Jogos da Juventude reúne as equipes masculino e feminino da NELP, fortalecendo o esporte escolar e promovendo desenvolvimento técnico e social para atletas jovens.'
+  },
+  {
+    id: 3,
     nome: 'Festival de vôlei 2025',
     status: 'Concluído',
     descricao: 'Evento anual que celebra o voleibol por meio de competições, confraternização e desenvolvimento esportivo.',
@@ -67,23 +84,7 @@ const projetos: Projeto[] = [
     ],
     descricaoLonga: 'O festival reúne crianças e jovens para um dia de esporte, integração e cidadania...'
   },
-  {
-    id: 3,
-    nome: 'Jogos da Juventude Paraná 2026',
-    status: 'Concluído',
-    descricao: 'Competições do Jogos da Juventude no Paraná, com categorias masculino e feminino representando a NELP.',
-    imagens: [
-      '/juventude2026_1.jpg',
-      '/juventude2026_2.jpg',
-      '/juventude2026_3.jpg',
-      '/juventude2026_4.jpg',
-      '/juventude2026_5.jpg',
-      '/juventude2026_7.jpg', 
-      
-      
-    ],
-    descricaoLonga: 'A participação nos Jogos da Juventude reúne as equipes masculino e feminino da NELP, fortalecendo o esporte escolar e promovendo desenvolvimento técnico e social para atletas jovens.'
-  },
+  
 ];
 
 export default function Projetos() {
