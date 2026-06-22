@@ -20,7 +20,6 @@ const projetos: Projeto[] = [
     descricao: 'Parceria com a rede pública de ensino de Paranaguá para oferecer atividades esportivas dentro do ambiente escolar. ',
     imagens: [
       '/atividade1.jpg',
-      '/atividade.jpg',
       '/atividade2.jpg',
       '/atividade3.jpg',
       '/atividade4.jpg',
@@ -28,27 +27,47 @@ const projetos: Projeto[] = [
       '/atividade6.jpg',
       '/atividade7.jpg',
       '/atividade8.jpg',
+      '/atividade9.jpg',
+      '/atividade10.jpg',
      
     ],
     descricaoLonga: 'O projeto leva aulas de vôlei para escolas públicas, promovendo inclusão e saúde...'
   },
   {
     id: 2,
-    nome: 'Nelp vôlei Litoral',
+    nome: 'Festival de vôlei 2025',
     status: 'Concluído',
-    descricao: 'Evento anual com diversas modalidades esportivas.',
+    descricao: 'Evento anual que celebra o voleibol por meio de competições, confraternização e desenvolvimento esportivo.',
     imagens: [
-      '/festival.jpg',
-      '/atividade1.jpg',
-      '/atividade2.jpg',
-      '/atividade3.jpg',
-      '/atividade4.jpg',
-      '/atividade5.jpg',
-      '/atividade6.jpg',
-      '/atividade7.jpg',
+      '/festival.jpg', 
+      '/festival2.jpg',
+      '/festival3.jpg',
+      '/festival4.jpg',
+      '/festival5.jpg',
+      '/festival6.jpg',
+      '/festival7.jpg',
+      '/festival8.jpg',
+      '/festival9.jpg',
+      '/festival10.jpg',
+      '/festival11.jpg',
+      '/festival12.jpg',
+      '/festival13.jpg',
+      '/festival14.jpg',
+      '/festival15.jpg',
+      '/festival16.jpg',
+      '/festival17.jpg',
+      '/festival18.jpg',
+      '/festival19.jpg',
+      '/festival20.jpg',
+      '/festival21.jpg',
+      '/festival22.jpg',
+      '/festival23.jpg',
+      
+      
     ],
     descricaoLonga: 'O festival reúne crianças e jovens para um dia de esporte, integração e cidadania...'
- }
+  },
+  
 ];
 
 export default function Projetos() {
