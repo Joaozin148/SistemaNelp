@@ -10,6 +10,10 @@ interface Projeto {
   descricao: string;
   imagens: string[];
   descricaoLonga: string;
+  capaFit?: 'cover' | 'contain';
+  capaPosicao?: string;
+  capaFundo?: string;
+  capaPadding?: string;
 }
 
 const projetos: Projeto[] = [
@@ -52,6 +56,25 @@ const projetos: Projeto[] = [
   },
   {
     id: 3,
+    nome: 'Jogos Regional Litoral 2026',
+    status: 'Concluído',
+    descricao: 'Competições dos Jogos Regional Litoral, com categorias masculino e feminino representando a NELP.',
+    imagens: [
+      '/jogosregional_1.jpg',
+      '/jogosregional_2.jpg',
+      '/jogosregional_3.jpg',
+      
+      
+      
+    ],
+    descricaoLonga: 'A participação nos Jogos Regional Litoral reúne as equipes masculino e feminino da NELP',
+    capaFit: 'contain',
+    capaPosicao: 'center',
+    capaFundo: 'bg-gradient-to-br from-gray-100 via-gray-50 to-yellow-50',
+    capaPadding: 'p-4 pt-5',
+  },
+  {
+    id: 4,
     nome: 'Festival de vôlei 2025',
     status: 'Concluído',
     descricao: 'Evento anual que celebra o voleibol por meio de competições, confraternização e desenvolvimento esportivo.',
@@ -126,7 +149,17 @@ export default function Projetos() {
             style={{ animationDelay: `${idx * 80}ms` }}
             onClick={() => { setProjetoSelecionado(projeto); setImgIndex(0); }}
           >
-            <img src={projeto.imagens[0]} alt={projeto.nome} className="w-full h-80 object-cover rounded-t-3xl border-b-4 border-yellow-100" />
+            <div className={`relative h-80 overflow-hidden rounded-t-3xl border-b-4 border-yellow-100 ${projeto.capaFundo ?? 'bg-gray-50'} ${projeto.capaPadding ?? ''}`}>
+              <img
+                src={projeto.imagens[0]}
+                alt={projeto.nome}
+                className="w-full h-full"
+                style={{
+                  objectFit: projeto.capaFit ?? 'cover',
+                  objectPosition: projeto.capaPosicao ?? 'center',
+                }}
+              />
+            </div>
             <div className="p-10 flex flex-col flex-1">
               <h3 className="font-extrabold text-2xl text-yellow-600 mb-3 drop-shadow-sm">{projeto.nome}</h3>
               <p className="text-gray-700 flex-1 text-lg mb-2">{projeto.descricao}</p>
