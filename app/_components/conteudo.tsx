@@ -16,25 +16,14 @@ export default function CompeticoesEmDestaque() {
           <div className="flex flex-col md:flex-row gap-16 md:gap-24 items-start">
             <div className="flex-1 flex flex-col gap-8 md:gap-12 pl-2 pr-2">
               <div>
-                <h2 className="text-2xl text-yellow-400 font-bold mb-3 mt-0">Agosto</h2>
-                <ul className="space-y-2 text-sm text-gray-200">
-                  <li><span className="text-yellow-400 font-semibold">CAMPEONATO ESTADUAL</span> Sub13 3º etapa <span className="text-yellow-400 font-semibold">16 a 17 de agosto</span> – São José dos Pinhais</li>
-                </ul>
-              </div>
-              <div>
-                <h2 className="text-2xl text-yellow-400 font-bold mb-3 mt-0">Setembro</h2>
-                <ul className="space-y-2 text-sm text-gray-200">
-                  <li><span className="text-yellow-400 font-semibold">CAMPEONATO ESTADUAL</span> Sub19 feminino B 3º etapa <span className="text-yellow-400 font-semibold">05 a 07 de setembro</span> – Ibiporã</li>
-                  <li><span className="text-yellow-400 font-semibold">CAMPEONATO ESTADUAL</span> Sub19 masculino B 3º etapa <span className="text-yellow-400 font-semibold">05 a 07 de setembro</span> – Ribeirão do Pinhal</li>
-                  <li><span className="text-yellow-400 font-semibold">CAMPEONATO ESTADUAL</span> Sub17 masculino B 2º etapa <span className="text-yellow-400 font-semibold">12 a 14 de setembro</span> – Cascavel</li>
-                  <li><span className="text-yellow-400 font-semibold">CAMPEONATO ESTADUAL</span> Sub17 feminino C 2º etapa <span className="text-yellow-400 font-semibold">12 a 14 de setembro</span> – A DEFINIR</li>
-                  <li><span className="text-yellow-400 font-semibold">CAMPEONATO ESTADUAL</span> Sub15 feminino B <span className="text-yellow-400 font-semibold">19 a 21 de setembro</span> - Maringá</li>
-                </ul>
-              </div>
-              <div>
                 <h2 className="text-2xl text-yellow-400 font-bold mb-3 mt-0">Outubro</h2>
                 <ul className="space-y-2 text-sm text-gray-200">
-                  <li><span className="text-yellow-400 font-semibold">FESTIVAL DAS ESCOLINHAS</span> Todas as crianças <span className="text-yellow-400 font-semibold">18 de outubro</span> – Arena Albrtina</li>
+                  <li>
+                    <span className="text-yellow-400 font-semibold">TERCEIRA ETAPA — FASE REGIONAL</span>
+                    <span className="text-yellow-400 font-semibold">24 e 25 de outubro</span>
+                    <br />Feminino: Sub 15 e Sub 18
+                    <br />Masculino: Sub 19
+                  </li>
                 </ul>
               </div>
             </div>
@@ -43,14 +32,22 @@ export default function CompeticoesEmDestaque() {
               <div>
                 <h2 className="text-2xl text-yellow-400 font-bold mb-3 mt-0">Novembro</h2>
                 <ul className="space-y-2 text-sm text-gray-200">
-                  <li><span className="text-yellow-400 font-semibold">CAMPEONATO ESTADUAL</span> Sub19 B masculino 4º etapa <span className="text-yellow-400 font-semibold">21 a 23 de novembro</span> – Capanema</li>
-                  <li><span className="text-yellow-400 font-semibold">CAMPEONATO ESTADUAL</span> SUB19 feminino  B 4º etapa <span className="text-yellow-400 font-semibold">21 a 23 de novembro</span> – Irati</li>
+                  <li>
+                    <span className="text-yellow-400 font-semibold">TAÇA PARANÁ</span>
+                    <span className="text-yellow-400 font-semibold">31 de outubro a 6 de novembro</span>
+                    <br />Feminino: Sub 15 e Sub 19
+                    <br />Masculino: Sub 19
+                  </li>
                 </ul>
               </div>
               <div>
                 <h2 className="text-2xl text-yellow-400 font-bold mb-3 mt-0">Dezembro</h2>
                 <ul className="space-y-2 text-sm text-gray-200">
-                  <li><span className="text-yellow-400 font-semibold">FESTIVAL DAS ESCOLINHAS</span> Todas as crianças <span className="text-yellow-400 font-semibold">13 de dezembro</span> – Arena Albrtina</li>
+                  <li>
+                    <span className="text-yellow-400 font-semibold">FESTIVAL DAS ESCOLINHAS</span>
+                    <span className="text-yellow-400 font-semibold">17 de dezembro</span>
+                    – Albertina
+                  </li>
                 </ul>
               </div>
             </div>
